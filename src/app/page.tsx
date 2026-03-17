@@ -71,6 +71,12 @@ export default function Home() {
           transition={{ duration: 1 }}
         >
           {langSwitch}
+          <button
+            onClick={() => setAppState("landing")}
+            className="fixed top-6 left-6 z-50 px-4 py-2 bg-black/20 backdrop-blur-md border border-white/10 rounded-full text-xs font-sans tracking-widest text-white/40 hover:text-dawn-highlight hover:border-dawn-gold/50 hover:bg-black/40 transition-all duration-300"
+          >
+            {locale === "ja" ? "✕ やめる" : "✕ Quit"}
+          </button>
           <QuizEngine
             questions={questions}
             locale={locale}

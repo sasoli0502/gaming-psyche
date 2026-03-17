@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { GamerType, AxisScores, Locale, AXIS_LABELS, AXIS_POLES } from "@/lib/types";
 import { lt, t } from "@/lib/i18n";
 import { NeonText } from "@/components/ui/NeonText";
@@ -28,6 +29,20 @@ function generateCode(type: GamerType): string {
 }
 
 export function ResultView({ type, scores, locale, onRestart }: ResultViewProps) {
+  const [showFloatingTop, setShowFloatingTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowFloatingTop(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const axes: (keyof AxisScores)[] = [
     "aggression",
     "altruism",
@@ -260,6 +275,34 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
           {t(locale, "common.backToTop")}
         </CyberButton>
       </motion.div>
+
+      {/* Floating buttons */}
+      <AnimatePresence>
+        {showFloatingTop && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
+            className="fixed bottom-6 right-6 z-50 flex flex-col gap-3"
+          >
+            <button
+              onClick={scrollToTop}
+              className="w-12 h-12 bg-black/40 backdrop-blur-md border border-white/10 rounded-full text-white/60 hover:text-dawn-highlight hover:border-dawn-gold/50 transition-all duration-300 flex items-center justify-center text-lg"
+              title={locale === "ja" ? "上に戻る" : "Back to top"}
+            >
+              ↑
+            </button>
+            <button
+              onClick={onRestart}
+              className="w-12 h-12 bg-black/40 backdrop-blur-md border border-white/10 rounded-full text-white/60 hover:text-dawn-highlight hover:border-dawn-gold/50 transition-all duration-300 flex items-center justify-center text-xs font-sans"
+              title={locale === "ja" ? "最初から" : "Restart"}
+            >
+              ↺
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
