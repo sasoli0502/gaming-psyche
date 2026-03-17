@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ParticleBackground } from "@/components/ui/ParticleBackground";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,8 +34,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        <div className="scanline-bg fixed inset-0 z-50 pointer-events-none" />
-        <div className="cyber-grid fixed inset-0 z-0 pointer-events-none" />
+        <div className="dawn-bg fixed inset-0 z-0" />
+        <ParticleBackground />
         <main className="relative z-10 min-h-screen">{children}</main>
       </body>
     </html>

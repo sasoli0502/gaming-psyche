@@ -8,7 +8,7 @@ interface RadarChartProps {
   size?: number;
 }
 
-export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
+export function RadarChart({ scores, locale, size = 320 }: RadarChartProps) {
   const axes: (keyof AxisScores)[] = [
     "aggression",
     "altruism",
@@ -18,7 +18,7 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
   ];
 
   const center = size / 2;
-  const radius = size / 2 - 40;
+  const radius = size / 2 - 50; // More padding for labels
   const angleStep = (Math.PI * 2) / 5;
 
   // Convert scores to 0-100 range for display (from -100 to +100)
@@ -43,7 +43,7 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
   const rings = [25, 50, 75, 100];
 
   return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="mx-auto block">
       {/* Grid */}
       {rings.map((ring) => {
         const points = axes
@@ -56,9 +56,9 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
           <polygon
             key={ring}
             points={points}
-            fill="none"
-            stroke="rgba(0, 240, 255, 0.1)"
-            strokeWidth="0.5"
+            fill={ring === 100 ? "rgba(255, 184, 77, 0.02)" : "none"}
+            stroke={ring === 100 ? "rgba(255, 184, 77, 0.15)" : "rgba(255, 255, 255, 0.05)"}
+            strokeWidth={ring === 100 ? "1" : "0.5"}
           />
         );
       })}
@@ -73,8 +73,9 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
             y1={center}
             x2={end.x}
             y2={end.y}
-            stroke="rgba(0, 240, 255, 0.1)"
+            stroke="rgba(255, 255, 255, 0.1)"
             strokeWidth="0.5"
+            strokeDasharray="2 2"
           />
         );
       })}
@@ -82,10 +83,11 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
       {/* Data polygon */}
       <path
         d={dataPath}
-        fill="rgba(0, 240, 255, 0.15)"
-        stroke="rgba(0, 240, 255, 0.8)"
-        strokeWidth="2"
+        fill="rgba(ff, 184, 77, 0.15)"
+        stroke="rgba(255, 184, 77, 0.6)"
+        strokeWidth="1.5"
         filter="url(#glow)"
+        style={{ fill: "url(#dataGradient)" }}
       />
 
       {/* Data points */}
@@ -94,15 +96,17 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
           key={i}
           cx={p.x}
           cy={p.y}
-          r="4"
-          fill="#00f0ff"
+          r="3"
+          fill="#ffeed1"
+          stroke="rgba(255, 184, 77, 0.8)"
+          strokeWidth="1"
           filter="url(#glow)"
         />
       ))}
 
       {/* Labels */}
       {axes.map((axis, i) => {
-        const labelPoint = getPoint(i, 120);
+        const labelPoint = getPoint(i, 125);
         return (
           <text
             key={axis}
@@ -110,24 +114,29 @@ export function RadarChart({ scores, locale, size = 280 }: RadarChartProps) {
             y={labelPoint.y}
             textAnchor="middle"
             dominantBaseline="middle"
-            fill="rgba(255,255,255,0.6)"
-            fontSize="11"
-            fontFamily="monospace"
+            fill="rgba(255, 255, 255, 0.6)"
+            fontSize="12"
+            fontFamily="sans-serif"
+            className="tracking-wide"
           >
             {AXIS_LABELS[axis][locale]}
           </text>
         );
       })}
 
-      {/* Glow filter */}
+      {/* Glow and Gradients */}
       <defs>
         <filter id="glow">
-          <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+          <feGaussianBlur stdDeviation="3" result="coloredBlur" />
           <feMerge>
             <feMergeNode in="coloredBlur" />
             <feMergeNode in="SourceGraphic" />
           </feMerge>
         </filter>
+        <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="rgba(255, 184, 77, 0.3)" />
+          <stop offset="100%" stopColor="rgba(255, 123, 48, 0.1)" />
+        </linearGradient>
       </defs>
     </svg>
   );

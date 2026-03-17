@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #e0e0e8;
-  --neon-cyan: #00f0ff;
-  --neon-magenta: #ff00ff;
-  --neon-green: #39ff14;
-  --neon-yellow: #ffff00;
-  --neon-orange: #ff6600;
-  --card-bg: rgba(15, 15, 25, 0.85);
-  --card-border: rgba(0, 240, 255, 0.15);
+  --background: #050608;
+  --foreground: #f4f0e6;
+  --dawn-gold: #ffb84d;
+  --dawn-orange: #ff7b30;
+  --dawn-red: #d14124;
+  --dawn-blue: #2a3b5c;
+  --dawn-highlight: #ffeed1;
+  --card-bg: rgba(20, 24, 34, 0.4);
+  --card-border: rgba(255, 184, 77, 0.15);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-neon-cyan: var(--neon-cyan);
-  --color-neon-magenta: var(--neon-magenta);
-  --color-neon-green: var(--neon-green);
-  --color-neon-yellow: var(--neon-yellow);
-  --color-neon-orange: var(--neon-orange);
+  --color-dawn-gold: var(--dawn-gold);
+  --color-dawn-orange: var(--dawn-orange);
+  --color-dawn-red: var(--dawn-red);
+  --color-dawn-blue: var(--dawn-blue);
+  --color-dawn-highlight: var(--dawn-highlight);
   --color-card-bg: var(--card-bg);
   --color-card-border: var(--card-border);
   --font-sans: var(--font-geist-sans);
@@ -33,66 +33,71 @@ body {
   min-height: 100vh;
 }
 
-/* Scanline overlay */
-.scanline-bg {
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(0, 240, 255, 0.02) 2px,
-      rgba(0, 240, 255, 0.02) 4px
-    );
+/* Base dawn background gradient */
+.dawn-bg {
+  background: linear-gradient(
+    180deg,
+    #050608 0%,
+    #0f172a 40%,
+    #2a3b5c 70%,
+    #3f2b36 85%,
+    #5a2a2a 100%
+  );
   pointer-events: none;
 }
 
-/* Neon glow text */
-.neon-text {
+/* Warm glow text */
+.dawn-text {
   text-shadow:
-    0 0 7px var(--neon-cyan),
-    0 0 10px var(--neon-cyan),
-    0 0 21px var(--neon-cyan),
-    0 0 42px var(--neon-cyan);
+    0 0 10px rgba(255, 184, 77, 0.3),
+    0 0 20px rgba(255, 184, 77, 0.2),
+    0 0 40px rgba(255, 184, 77, 0.1);
 }
 
-.neon-text-magenta {
+.dawn-text-orange {
   text-shadow:
-    0 0 7px var(--neon-magenta),
-    0 0 10px var(--neon-magenta),
-    0 0 21px var(--neon-magenta);
+    0 0 10px rgba(255, 123, 48, 0.4),
+    0 0 20px rgba(255, 123, 48, 0.2),
+    0 0 30px rgba(255, 123, 48, 0.1);
 }
 
 /* Glow border */
 .glow-border {
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  border: 1px solid rgba(255, 184, 77, 0.2);
   box-shadow:
-    0 0 5px rgba(0, 240, 255, 0.1),
-    inset 0 0 5px rgba(0, 240, 255, 0.05);
+    0 0 10px rgba(255, 184, 77, 0.05),
+    inset 0 0 10px rgba(255, 184, 77, 0.02);
 }
 
 .glow-border-hover:hover {
-  border-color: rgba(0, 240, 255, 0.6);
+  border-color: rgba(255, 184, 77, 0.5);
   box-shadow:
-    0 0 15px rgba(0, 240, 255, 0.2),
-    inset 0 0 10px rgba(0, 240, 255, 0.1);
+    0 0 20px rgba(255, 184, 77, 0.15),
+    inset 0 0 15px rgba(255, 184, 77, 0.05);
 }
 
-/* Progress bar neon */
-.progress-neon {
-  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
-}
-
-/* Cyber grid background */
-.cyber-grid {
-  background-image:
-    linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
-  background-size: 50px 50px;
+/* Progress bar dawn */
+.progress-dawn {
+  background: linear-gradient(90deg, var(--dawn-gold), var(--dawn-orange));
+  box-shadow: 0 0 15px rgba(255, 184, 77, 0.4);
 }
 
 /* Selection highlight */
 ::selection {
-  background: rgba(0, 240, 255, 0.3);
-  color: white;
+  background: rgba(255, 184, 77, 0.2);
+  color: var(--dawn-highlight);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

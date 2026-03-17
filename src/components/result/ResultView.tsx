@@ -55,95 +55,119 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center px-4 py-12">
+    <div className="min-h-screen flex flex-col items-center px-4 py-16 relative">
+      {/* Epic background atmospheric glow for results */}
+      <div className="absolute inset-0 bg-gradient-to-b from-dawn-orange/10 via-transparent to-transparent pointer-events-none" />
+
       {/* Character + Type */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-8"
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="text-center mb-12 z-10 w-full"
       >
-        <span className="text-xs font-mono tracking-[0.3em] text-neon-cyan/50 uppercase mb-2 block">
-          {t(locale, "result.yourType")}
-        </span>
-        <a
-          href={type.characterUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block hover:opacity-80 transition-opacity"
+        <motion.span 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="text-xs md:text-sm font-sans tracking-[0.4em] text-dawn-gold/60 uppercase mb-4 block"
         >
+          {t(locale, "result.yourType")}
+        </motion.span>
+        
+        <div className="relative inline-block mb-3">
           <NeonText
             as="h1"
-            color="cyan"
-            className="text-4xl md:text-6xl font-bold mb-2"
+            color="highlight"
+            className="text-5xl md:text-7xl lg:text-8xl font-sans font-light tracking-tight px-4 filter drop-shadow-[0_0_20px_rgba(255,238,209,0.3)] text-dawn-highlight"
           >
             {type.character}
           </NeonText>
-        </a>
-        <a
-          href={type.characterUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-lg md:text-xl text-neon-cyan/70 font-mono mb-1 inline-block hover:text-neon-cyan transition-colors underline underline-offset-4 decoration-neon-cyan/30"
-        >
-          {type.characterGame}
-        </a>
-        <a
-          href={type.characterUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-white/30 hover:text-neon-cyan/60 transition-colors block mb-3"
-        >
-          {locale === "ja" ? "▶ キャラクター詳細を見る（Wikipedia）" : "▶ View character details (Wikipedia)"}
-        </a>
-        <div className="flex items-center justify-center gap-3">
-          <span className="px-3 py-1 border border-neon-magenta/40 text-neon-magenta font-mono text-sm tracking-widest">
-            {typeCode}
-          </span>
-          <span className="text-white/30 text-sm">—</span>
-          <span className="text-white/50 text-sm">
-            {lt(locale, type.name)}
-          </span>
+          {/* Subtle light sweep across the name */}
+          <motion.div 
+            initial={{ left: "-100%" }}
+            animate={{ left: "200%" }}
+            transition={{ duration: 2.5, ease: "easeInOut", repeat: Infinity, repeatDelay: 5 }}
+            className="absolute top-0 bottom-0 w-32 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[-20deg] mix-blend-overlay pointer-events-none"
+          />
         </div>
+
+        <div className="text-xl md:text-3xl text-dawn-gold/80 font-serif mb-8 italic tracking-wide">
+          {type.characterGame}
+        </div>
+        
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="flex flex-col items-center gap-4 mb-4"
+        >
+          <div className="flex items-center justify-center gap-4">
+            <span className="px-4 py-1.5 bg-dawn-gold/10 border border-dawn-gold/30 text-dawn-gold font-sans text-sm tracking-[0.2em] rounded-sm">
+              {typeCode}
+            </span>
+            <span className="text-white/30 text-sm">—</span>
+            <span className="text-dawn-highlight/80 text-lg md:text-xl font-light tracking-wide">
+              {lt(locale, type.name)}
+            </span>
+          </div>
+
+          <a
+            href={type.characterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 mt-4 px-6 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-dawn-gold/30 rounded-full transition-all duration-300 backdrop-blur-sm"
+          >
+            <span className="text-sm font-sans tracking-wide text-white/70 group-hover:text-dawn-highlight transition-colors">
+              {locale === "ja" ? "このキャラについて詳しく" : "Learn more about character"}
+            </span>
+            <span className="text-dawn-gold/60 group-hover:text-dawn-gold transition-colors text-lg leadiing-none transform group-hover:translate-x-1 duration-300">
+              →
+            </span>
+          </a>
+        </motion.div>
       </motion.div>
 
       {/* Radar Chart */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        className="mb-8"
+        transition={{ duration: 1, delay: 0.8 }}
+        className="mb-12"
       >
         <RadarChart scores={scores} locale={locale} />
       </motion.div>
 
       {/* Axis Breakdown */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="w-full max-w-lg mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.2 }}
+        className="w-full max-w-lg mb-12"
       >
-        <h2 className="text-xs font-mono tracking-[0.3em] text-neon-cyan/50 uppercase mb-4 text-center">
+        <h2 className="text-xs font-sans tracking-[0.3em] text-dawn-gold/60 uppercase mb-8 text-center flex items-center justify-center gap-4">
+          <span className="w-12 h-px bg-dawn-gold/20" />
           {t(locale, "result.axes")}
+          <span className="w-12 h-px bg-dawn-gold/20" />
         </h2>
-        <div className="space-y-3">
+        
+        <div className="space-y-4">
           {axes.map((axis) => {
             const value = scores[axis];
             const pole = value >= 0 ? "high" : "low";
             const absValue = Math.abs(value);
 
             return (
-              <div key={axis} className="flex items-center gap-3">
-                <span className="text-xs font-mono text-white/40 w-16 text-right">
+              <div key={axis} className="flex items-center gap-4">
+                <span className="text-xs font-sans text-white/50 w-20 text-right tracking-wider">
                   {AXIS_LABELS[axis][locale]}
                 </span>
-                <div className="flex-1 h-2 bg-white/5 rounded-full relative overflow-hidden">
+                <div className="flex-1 h-1.5 bg-black/40 border border-white/5 rounded-full relative overflow-hidden">
                   <div
-                    className={`absolute top-0 h-full rounded-full ${
+                    className={`absolute top-0 h-full rounded-full transition-all duration-1000 ${
                       pole === "high"
-                        ? "right-1/2 bg-gradient-to-r from-transparent to-neon-cyan"
-                        : "left-1/2 bg-gradient-to-l from-transparent to-neon-magenta"
+                        ? "right-1/2 bg-gradient-to-r from-dawn-orange to-dawn-highlight shadow-[0_0_10px_rgba(255,184,77,0.5)]"
+                        : "left-1/2 bg-gradient-to-l from-dawn-red to-dawn-gold shadow-[0_0_10px_rgba(209,65,36,0.5)]"
                     }`}
                     style={{
                       width: `${absValue / 2}%`,
@@ -152,7 +176,7 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
                   />
                   <div className="absolute left-1/2 top-0 w-px h-full bg-white/20" />
                 </div>
-                <span className="text-xs font-mono text-white/60 w-16">
+                <span className="text-xs font-sans text-white/70 w-20 tracking-wider">
                   {AXIS_POLES[axis][pole][locale]}
                 </span>
               </div>
@@ -163,13 +187,13 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
 
       {/* Description */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.7 }}
-        className="w-full max-w-lg mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.4 }}
+        className="w-full max-w-lg mb-12"
       >
         <GlowCard hoverable={false}>
-          <p className="text-white/80 leading-relaxed text-sm">
+          <p className="text-dawn-highlight/80 leading-relaxed text-sm md:text-base font-light font-serif">
             {lt(locale, type.description)}
           </p>
         </GlowCard>
@@ -177,19 +201,19 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
 
       {/* Recommended Games */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.9 }}
-        className="w-full max-w-lg mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.6 }}
+        className="w-full max-w-lg mb-16"
       >
-        <h2 className="text-xs font-mono tracking-[0.3em] text-neon-cyan/50 uppercase mb-4 text-center">
+        <h2 className="text-xs font-sans tracking-[0.3em] text-dawn-gold/60 uppercase mb-6 text-center">
           {t(locale, "result.games")}
         </h2>
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap justify-center gap-3">
           {type.recommendedGames.map((game) => (
             <span
               key={game}
-              className="px-3 py-1 border border-white/10 rounded-sm text-xs font-mono text-white/60"
+              className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-sans text-white/70 tracking-wide hover:border-dawn-gold/30 hover:text-dawn-highlight transition-colors duration-300"
             >
               {game}
             </span>
@@ -199,24 +223,24 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
 
       {/* Upgrade Prompt */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.1 }}
-        className="w-full max-w-lg mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.8 }}
+        className="w-full max-w-lg mb-12"
       >
-        <GlowCard hoverable={false} className="text-center">
-          <NeonText as="h3" color="magenta" className="text-lg font-bold mb-3">
+        <GlowCard hoverable={false} className="text-center bg-gradient-to-b from-dawn-orange/10 to-transparent">
+          <NeonText as="h3" color="orange" className="text-xl font-sans font-light mb-4">
             {t(locale, "result.deepAnalysis")}
           </NeonText>
-          <p className="text-white/50 text-sm mb-4">
+          <p className="text-white/60 text-sm mb-6 leading-relaxed font-light">
             {t(locale, "result.upgrade")}
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <CyberButton variant="ghost" size="sm">
-              {t(locale, "result.mid.title")} — {t(locale, "result.mid.price")}
+              {t(locale, "result.mid.title")} <br className="sm:hidden" />({t(locale, "result.mid.price")})
             </CyberButton>
             <CyberButton variant="secondary" size="sm">
-              {t(locale, "result.top.title")} — {t(locale, "result.top.price")}
+              {t(locale, "result.top.title")} <br className="sm:hidden" />({t(locale, "result.top.price")})
             </CyberButton>
           </div>
         </GlowCard>
@@ -226,13 +250,13 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.3 }}
-        className="flex gap-4"
+        transition={{ duration: 1, delay: 2 }}
+        className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-8"
       >
-        <CyberButton onClick={handleShare}>
+        <CyberButton onClick={handleShare} size="lg">
           {t(locale, "result.share")}
         </CyberButton>
-        <CyberButton variant="ghost" onClick={onRestart}>
+        <CyberButton variant="ghost" onClick={onRestart} size="lg">
           {t(locale, "common.backToTop")}
         </CyberButton>
       </motion.div>

@@ -22,21 +22,21 @@ export function CyberButton({
   type = "button",
 }: CyberButtonProps) {
   const baseStyles =
-    "relative font-mono font-bold uppercase tracking-widest transition-all duration-300 cursor-pointer";
+    "relative font-sans tracking-widest transition-all duration-500 cursor-pointer overflow-hidden rounded-sm";
 
   const sizeStyles = {
-    sm: "px-4 py-2 text-xs",
-    md: "px-6 py-3 text-sm",
-    lg: "px-10 py-4 text-base",
+    sm: "px-5 py-2.5 text-xs",
+    md: "px-8 py-3.5 text-sm",
+    lg: "px-12 py-5 text-base",
   };
 
   const variantStyles = {
     primary:
-      "bg-transparent border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10 hover:shadow-[0_0_20px_rgba(0,240,255,0.3)]",
+      "bg-dawn-gold/10 border border-dawn-gold/50 text-dawn-highlight hover:bg-dawn-gold/20 hover:border-dawn-gold hover:shadow-[0_0_20px_rgba(255,184,77,0.3)]",
     secondary:
-      "bg-transparent border-2 border-neon-magenta text-neon-magenta hover:bg-neon-magenta/10 hover:shadow-[0_0_20px_rgba(255,0,255,0.3)]",
+      "bg-dawn-orange/10 border border-dawn-orange/50 text-dawn-highlight hover:bg-dawn-orange/20 hover:border-dawn-orange hover:shadow-[0_0_20px_rgba(255,123,48,0.3)]",
     ghost:
-      "bg-transparent border border-white/20 text-white/70 hover:border-neon-cyan/50 hover:text-neon-cyan",
+      "bg-transparent border border-white/10 text-white/70 hover:border-dawn-gold/50 hover:text-dawn-highlight hover:bg-white/5",
   };
 
   return (
@@ -44,18 +44,17 @@ export function CyberButton({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className} ${
+      className={`group ${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className} ${
         disabled ? "opacity-30 cursor-not-allowed" : ""
       }`}
-      whileHover={disabled ? {} : { scale: 1.02 }}
+      whileHover={disabled ? {} : { scale: 1.02, y: -2 }}
       whileTap={disabled ? {} : { scale: 0.98 }}
     >
-      {/* Corner decorations */}
-      <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-current" />
-      <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-current" />
-      <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-current" />
-      <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-current" />
-      {children}
+      <span className="relative z-10 flex items-center justify-center gap-2">
+        {children}
+      </span>
+      {/* Soft gradient sweep effect */}
+      <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none" />
     </motion.button>
   );
 }
