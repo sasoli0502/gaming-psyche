@@ -1,0 +1,748 @@
+[
+  {
+    "id": "HHHHH",
+    "name": { "ja": "覇王の咆哮", "en": "Roar of the Conqueror" },
+    "character": "クレイトス",
+    "characterGame": "God of War",
+    "characterUrl": "https://en.wikipedia.org/wiki/Kratos_(God_of_War)",
+    "additionalCharacters": [
+      { "name": "ザックス", "game": "FF7 Crisis Core" },
+      { "name": "ゼシカ", "game": "ドラゴンクエスト8" },
+      { "name": "ワタル", "game": "ポケモン金銀" },
+      { "name": "アイリス", "game": "ポケモンBW2" },
+      { "name": "ダンデ", "game": "ポケモン剣盾" },
+      { "name": "ウルボザ", "game": "ゼルダの伝説 BotW" }
+    ],
+    "description": {
+      "ja": "全てにおいて全力。攻撃的でありながら仲間を守り、直感と美学に従って戦場を支配する。お前は戦いそのものに意味を見出す者だ。勝利は結果でしかない。その過程の熱量が、お前の人生そのものだ。",
+      "en": "All-out in everything. Aggressive yet protective, you dominate the battlefield through intuition and aesthetics. You find meaning in the fight itself. Victory is just a byproduct — the intensity of the process is your life."
+    },
+    "deepDescription": {
+      "ja": "ニーチェの超人思想を体現する存在。既存の価値観を破壊し、自らの意志で新しい価値を創造する。",
+      "en": "You embody Nietzsche's Übermensch — destroying existing values and creating new ones through sheer will."
+    },
+    "recommendedGames": ["God of War Ragnarok", "Devil May Cry 5", "FF7 Crisis Core"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "high", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "HHHHL",
+    "name": { "ja": "熱血の先導者", "en": "The Blazing Vanguard" },
+    "character": "ネロ",
+    "characterGame": "Devil May Cry 5",
+    "characterUrl": "https://en.wikipedia.org/wiki/Nero_(Devil_May_Cry)",
+    "additionalCharacters": [
+      { "name": "ジタン", "game": "FF9" },
+      { "name": "ティーダ", "game": "FF10" },
+      { "name": "春日一番", "game": "龍が如く7" },
+      { "name": "ソラ", "game": "Kingdom Hearts" },
+      { "name": "ホムラ/ヒカリ", "game": "ゼノブレイド2" },
+      { "name": "キャプテン・ファルコン", "game": "F-Zero" },
+      { "name": "ソニック", "game": "ソニック・ザ・ヘッジホッグ" },
+      { "name": "ユーリ・ローウェル", "game": "テイルズ オブ ヴェスペリア" },
+      { "name": "トリッシュ", "game": "Devil May Cry" },
+      { "name": "グズマ", "game": "ポケモンSM" },
+      { "name": "ミドナ", "game": "ゼルダの伝説 TP" }
+    ],
+    "description": {
+      "ja": "感情が爆発する。仲間のためなら腕一本失っても前に出る。直感で動き、考えるより先に体が動く。美学なんてどうでもいい、大切な人を守れればそれでいい。お前は不器用で真っ直ぐな、本物のヒーローだ。",
+      "en": "Emotions explode. You'd lose an arm and still charge forward for your allies. Instinct drives you — your body moves before your mind. Forget aesthetics — protecting those you love is all that matters. You're a clumsy, honest, real hero."
+    },
+    "deepDescription": {
+      "ja": "アリストテレスの友愛論。他者との絆こそが人間の本質。「今この瞬間」のために全力を出す、刹那的な利他主義。",
+      "en": "Aristotle's theory of philia — bonds with others define humanity. An impulsive altruism that gives everything for 'this very moment.'"
+    },
+    "recommendedGames": ["Devil May Cry 5", "FF10", "Kingdom Hearts III"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "high", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "HHHLH",
+    "name": { "ja": "孤高の策士", "en": "The Lone Strategist" },
+    "character": "ソリッド・スネーク",
+    "characterGame": "Metal Gear Solid",
+    "characterUrl": "https://en.wikipedia.org/wiki/Solid_Snake",
+    "additionalCharacters": [
+      { "name": "マルティナ", "game": "ドラゴンクエスト11" },
+      { "name": "アイク", "game": "FE蒼炎の軌跡" }
+    ],
+    "description": {
+      "ja": "計算高く、仲間思いで、攻めるべき時に攻める。しかしその判断はデータと分析に基づく。美学を持ちながらも、冷徹な計算を手放さない。お前は戦場の知将だ。",
+      "en": "Calculated, caring, and aggressive when the moment demands it. But your decisions are data-driven. You hold aesthetics dear while never abandoning cold analysis. You are the battlefield's intellectual commander."
+    },
+    "deepDescription": {
+      "ja": "孫子の兵法を体現する存在。「戦わずして勝つ」を理想としながらも、必要なら迷わず剣を取る。",
+      "en": "You embody Sun Tzu's Art of War — ideally winning without fighting, but never hesitating to draw the blade when necessary."
+    },
+    "recommendedGames": ["Metal Gear Solid V", "Hitman 3", "FE蒼炎の軌跡"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "high", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "HHHLL",
+    "name": { "ja": "正義の鉄拳", "en": "The Fist of Justice" },
+    "character": "クリス・レッドフィールド",
+    "characterGame": "バイオハザード",
+    "characterUrl": "https://en.wikipedia.org/wiki/Chris_Redfield",
+    "additionalCharacters": [
+      { "name": "春麗", "game": "ストリートファイター" },
+      { "name": "勇者", "game": "ドラゴンクエスト3" },
+      { "name": "ダルニア", "game": "ゼルダの伝説 OoT" },
+      { "name": "ダルケル", "game": "ゼルダの伝説 BotW" }
+    ],
+    "description": {
+      "ja": "脅威は排除する。仲間は絶対に置いていかない。チームを率い、経験と判断力で最前線に立つ。美学や哲学は要らない。任務を完遂し、全員で生きて帰る。それだけだ。",
+      "en": "Threats are eliminated. No one gets left behind. You lead the team, standing on the front line with experience and judgment. No aesthetics, no philosophy needed. Complete the mission, everyone comes home alive. That's all."
+    },
+    "deepDescription": {
+      "ja": "功利主義の体現者。「最大多数の最大幸福」を戦場に適用する。個人の犠牲も厭わない冷徹さと、誰も見捨てない矛盾を抱える。",
+      "en": "Utilitarian in action — applying 'the greatest good for the greatest number' to the battlefield. Carrying the contradiction of cold pragmatism and refusing to abandon anyone."
+    },
+    "recommendedGames": ["バイオハザード RE:4", "Mass Effect", "XCOM 2"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "high", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "HHLHH",
+    "name": { "ja": "一匹狼の詩人", "en": "The Poet Wolf" },
+    "character": "V",
+    "characterGame": "Cyberpunk 2077",
+    "characterUrl": "https://en.wikipedia.org/wiki/Cyberpunk_2077",
+    "additionalCharacters": [
+      { "name": "ダンテ", "game": "Devil May Cry" },
+      { "name": "桐生一馬", "game": "龍が如く" },
+      { "name": "真島吾朗", "game": "龍が如く" },
+      { "name": "クー・フーリン", "game": "Fate/stay night" },
+      { "name": "フータオ", "game": "原神" },
+      { "name": "ルト姫", "game": "ゼルダの伝説 OoT" },
+      { "name": "ルザミーネ", "game": "ポケモンSM" }
+    ],
+    "description": {
+      "ja": "攻撃的で仲間思い。だが群れることは嫌いだ。直感と美学に従い、自分だけの道を切り開く。お前の戦いには常に物語がある。ただ勝つだけでは満足できない。",
+      "en": "Aggressive and caring, but hating to run in packs. Following intuition and aesthetics, you carve your own path. Your battles always have a story. Winning alone doesn't satisfy you."
+    },
+    "deepDescription": {
+      "ja": "カミュの異邦人的存在。社会に属しながらも本質的に孤独。自分だけの意味を探し続ける反逆者。",
+      "en": "Camus' Stranger incarnate — belonging to society yet fundamentally alone. A rebel forever searching for personal meaning."
+    },
+    "recommendedGames": ["Cyberpunk 2077", "Devil May Cry 5", "龍が如く0"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "low", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "HHLHL",
+    "name": { "ja": "戦場の傭兵", "en": "The Battlefield Mercenary" },
+    "character": "ビッグボス",
+    "characterGame": "Metal Gear Solid 3",
+    "characterUrl": "https://en.wikipedia.org/wiki/Big_Boss_(Metal_Gear)",
+    "additionalCharacters": [
+      { "name": "マリオ", "game": "スーパーマリオ" },
+      { "name": "A2", "game": "NieR: Automata" },
+      { "name": "ナボール", "game": "ゼルダの伝説 OoT" },
+      { "name": "ローズ委員長", "game": "ポケモン剣盾" }
+    ],
+    "description": {
+      "ja": "直感で動き、仲間を大切にするが、組織には縛られない。結果を重視し、美学より効率を取る。自由を求めて戦い続ける。国も思想も関係ない。お前だけのルールがある。",
+      "en": "Intuition-driven, valuing allies but unbounded by organizations. Results over aesthetics, efficiency over beauty. Fighting for freedom. No nation, no ideology — only your own rules."
+    },
+    "deepDescription": {
+      "ja": "実存主義そのもの。サルトルの「自由の刑」を背負い、選択の重さを知りながらも、常に自分の意志で動く。",
+      "en": "Existentialism personified — bearing Sartre's 'condemned to be free,' knowing the weight of choice yet always acting by your own will."
+    },
+    "recommendedGames": ["Metal Gear Solid: Peace Walker", "NieR: Automata", "スーパーマリオ オデッセイ"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "low", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "HHLLH",
+    "name": { "ja": "鍛冶師の魂", "en": "The Blacksmith's Soul" },
+    "character": "2B",
+    "characterGame": "NieR: Automata",
+    "characterUrl": "https://en.wikipedia.org/wiki/Nier:_Automata",
+    "additionalCharacters": [
+      { "name": "ライトニング", "game": "FF13" },
+      { "name": "リク", "game": "Kingdom Hearts" },
+      { "name": "シャドウ", "game": "ソニック・ザ・ヘッジホッグ" },
+      { "name": "インパ", "game": "ゼルダの伝説 OoT" },
+      { "name": "インパ", "game": "ゼルダの伝説 SS" }
+    ],
+    "description": {
+      "ja": "攻めて、守って、でも一人で全てをやりたい。計算高く、美学を何より重んじる。お前は完璧を目指す職人だ。チームに頼るより、自分の腕を磨くことを選ぶ。",
+      "en": "Attack, defend, but do it all alone. Calculated and aesthetics-first. You're a craftsman pursuing perfection. You'd rather sharpen your own skills than rely on a team."
+    },
+    "deepDescription": {
+      "ja": "ヘーゲルの自己意識論。自分の限界と向き合い続けることで、弁証法的に成長していく存在。",
+      "en": "Hegelian self-consciousness — growing dialectically through constant confrontation with your own limits."
+    },
+    "recommendedGames": ["NieR: Automata", "FF13", "Kingdom Hearts III"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "low", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "HHLLL",
+    "name": { "ja": "合理の刃", "en": "The Rational Blade" },
+    "character": "ロックマン",
+    "characterGame": "ロックマン",
+    "characterUrl": "https://en.wikipedia.org/wiki/Mega_Man_(character)",
+    "additionalCharacters": [
+      { "name": "ルカリオ", "game": "ポケモン" },
+      { "name": "レディ", "game": "Devil May Cry 3" }
+    ],
+    "description": {
+      "ja": "正義のために戦い、一人で、冷静に、効率的に任務を遂行する。美学や哲学は不要だ。Dr.ライトの意志を継ぎ、ロボットマスターを一体ずつ撃破する。敵の武器をコピーして使う合理性。お前は感情を持つ機械であり、それゆえに誰よりも人間的だ。",
+      "en": "Fighting for justice, alone, calmly, efficiently executing the mission. No need for aesthetics or philosophy. Carrying Dr. Light's will, destroying Robot Masters one by one. The rationality of copying enemy weapons. You're a machine with emotions — and that makes you more human than anyone."
+    },
+    "deepDescription": {
+      "ja": "オッカムの剃刀を人格化した存在。必要最小限の手段で最大の結果を出す。しかしその心には「平和」という、最もシンプルで最も達成困難な願いがある。",
+      "en": "Occam's Razor personified — maximum results with minimum means. Yet in that heart lies 'peace' — the simplest and most impossible wish."
+    },
+    "recommendedGames": ["ロックマン11", "Mega Man X", "Azure Striker Gunvolt"],
+    "axes": { "aggression": "high", "altruism": "high", "cooperation": "low", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "HLHHH",
+    "name": { "ja": "闘姫の誇り", "en": "The Warrior Princess" },
+    "character": "アリーナ",
+    "characterGame": "ドラゴンクエスト4",
+    "characterUrl": "https://en.wikipedia.org/wiki/Dragon_Quest_IV",
+    "additionalCharacters": [
+      { "name": "フラダリ", "game": "ポケモンXY" }
+    ],
+    "description": {
+      "ja": "自分の力を試したい。その一心で城を飛び出す。チームを引っ張り、直感で駆け抜け、武術の頂を目指す。利他じゃない。お前は自分の強さを証明したいだけだ。その純粋な渇望が、周りを巻き込む嵐になる。",
+      "en": "You want to test your own strength. That alone drives you to leap from the castle. Leading the team, charging by instinct, aiming for the martial peak. It's not altruism — you just want to prove your power. That pure hunger becomes a storm that sweeps everyone along."
+    },
+    "deepDescription": {
+      "ja": "ニーチェの「力への意志」。表面上の利他は、より強くなるための手段。自己超越こそが真の目的。",
+      "en": "Nietzsche's 'Will to Power' — apparent altruism is a means to become stronger. Self-transcendence is the true goal."
+    },
+    "recommendedGames": ["ドラゴンクエスト4", "Apex Legends", "Warframe"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "high", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "HLHHL",
+    "name": { "ja": "嵐の略奪者", "en": "The Storm Raider" },
+    "character": "レイス",
+    "characterGame": "Apex Legends",
+    "characterUrl": "https://en.wikipedia.org/wiki/Apex_Legends",
+    "additionalCharacters": [
+      { "name": "クッパ", "game": "スーパーマリオ" }
+    ],
+    "description": {
+      "ja": "チームで戦い、直感で動くが、勝利だけが目的。美学もこだわりもない。ただ勝つ。お前にとってゲームは勝負であり、それ以上でもそれ以下でもない。",
+      "en": "Fight with the team, move by instinct, but victory is the only purpose. No aesthetics, no attachments. Just win. For you, the game is competition — nothing more, nothing less."
+    },
+    "deepDescription": {
+      "ja": "ホッブスの自然状態。「万人の万人に対する戦い」を受け入れ、その中で生き残ることだけを考える。",
+      "en": "Hobbes' state of nature — accepting the 'war of all against all' and focusing solely on survival within it."
+    },
+    "recommendedGames": ["Apex Legends", "Fortnite", "スーパーマリオブラザーズ"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "high", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "HLHLH",
+    "name": { "ja": "鋼鉄の参謀", "en": "The Steel Tactician" },
+    "character": "レオン・S・ケネディ",
+    "characterGame": "バイオハザード",
+    "characterUrl": "https://en.wikipedia.org/wiki/Leon_S._Kennedy",
+    "additionalCharacters": [
+      { "name": "Dr.エッグマン", "game": "ソニック・ザ・ヘッジホッグ" },
+      { "name": "リキッド・スネーク", "game": "Metal Gear Solid" }
+    ],
+    "description": {
+      "ja": "計算高く、チームで動き、攻撃的に前に出る。だが仲間への愛着より、自分のスキルへの誇りが行動原理だ。美学を持ちながら戦場を計算で支配する。",
+      "en": "Calculated, team-oriented, aggressively pushing forward. But pride in your own skills drives you more than attachment to allies. You dominate the battlefield through calculation while maintaining aesthetics."
+    },
+    "deepDescription": {
+      "ja": "デカルトの方法的懐疑。全てを疑い、確かなもの（自分の実力）だけを信じる。「我思う、ゆえに我勝つ」。",
+      "en": "Cartesian methodical doubt — questioning everything, believing only in what's certain (your own ability). 'I think, therefore I win.'"
+    },
+    "recommendedGames": ["バイオハザード RE:4", "The Division 2", "Ghost Recon Breakpoint"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "high", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "HLHLL",
+    "name": { "ja": "復讐の機械", "en": "The Vengeance Engine" },
+    "character": "9S",
+    "characterGame": "NieR: Automata",
+    "characterUrl": "https://en.wikipedia.org/wiki/Nier:_Automata",
+    "additionalCharacters": [
+      { "name": "エーデルガルト", "game": "FE風花雪月" }
+    ],
+    "description": {
+      "ja": "普段は協力的で分析力に長けたスキャナー。だが大切なものを失った瞬間、お前は殺戮マシンに変わる。チームで動くが、その根底にあるのは自分だけの執着だ。美学なんてない。ただ、壊したい。",
+      "en": "Normally cooperative with sharp analytical skills. But the moment you lose what matters, you become a killing machine. You work with the team, but underneath lies a deeply personal obsession. No aesthetics. Just destruction."
+    },
+    "deepDescription": {
+      "ja": "カントの義務論が崩壊した後の世界。義務に従っていた者が、喪失によって純粋な感情の奴隷になる悲劇。",
+      "en": "A world after Kantian duty collapses — the tragedy of one who followed duty becoming a slave to raw emotion after loss."
+    },
+    "recommendedGames": ["NieR: Automata", "The Last of Us Part II", "FE風花雪月"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "high", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "HLLHH",
+    "name": { "ja": "堕天の剣聖", "en": "The Fallen Swordmaster" },
+    "character": "セフィロス",
+    "characterGame": "Final Fantasy VII",
+    "characterUrl": "https://en.wikipedia.org/wiki/Sephiroth_(Final_Fantasy)",
+    "additionalCharacters": [
+      { "name": "テリー", "game": "ドラゴンクエスト6" },
+      { "name": "ロクサス", "game": "Kingdom Hearts" },
+      { "name": "ファルコ", "game": "スターフォックス" },
+      { "name": "エイダ・ウォン", "game": "バイオハザード" },
+      { "name": "ベヨネッタ", "game": "ベヨネッタ" },
+      { "name": "グリーン", "game": "ポケモン赤緑" },
+      { "name": "アオギリ", "game": "ポケモンRSE" },
+      { "name": "ゲーチス", "game": "ポケモンBW" },
+      { "name": "ギラヒム", "game": "ゼルダの伝説 SS" },
+      { "name": "オセロット", "game": "Metal Gear Solid" }
+    ],
+    "description": {
+      "ja": "圧倒的な力で、孤独に、直感と美学で全てを蹂躙する。お前の動機は完全に自己中心的だ。孤独と怒りが原動力。だがその剣技には、誰も否定できない美がある。破壊こそがお前の芸術だ。",
+      "en": "With overwhelming power, alone, by intuition and aesthetics, you crush everything. Your motivation is entirely self-centered. Solitude and rage are your fuel. But your swordplay holds undeniable beauty. Destruction is your art."
+    },
+    "deepDescription": {
+      "ja": "ディオニュソス的衝動。アポロン的理性を捨て、生命の狂騒に身を委ねる。破壊の中に創造を見出す。",
+      "en": "Dionysian impulse — abandoning Apollonian reason, surrendering to life's frenzy. Finding creation within destruction."
+    },
+    "recommendedGames": ["FF7 Rebirth", "Kingdom Hearts III", "ベヨネッタ3"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "low", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "HLLHL",
+    "name": { "ja": "荒野のハイエナ", "en": "The Desert Hyena" },
+    "character": "トレバー",
+    "characterGame": "GTA V",
+    "characterUrl": "https://en.wikipedia.org/wiki/Trevor_Philips",
+    "additionalCharacters": [
+      { "name": "ジェット", "game": "Valorant" },
+      { "name": "オクタン", "game": "Apex Legends" },
+      { "name": "ウルフ", "game": "スターフォックス" },
+      { "name": "ククール", "game": "ドラゴンクエスト8" },
+      { "name": "りゅうおう", "game": "ドラゴンクエスト1" },
+      { "name": "シドー", "game": "ドラゴンクエスト2" },
+      { "name": "デスピサロ", "game": "ドラゴンクエスト4" },
+      { "name": "ラプソーン", "game": "ドラゴンクエスト8" },
+      { "name": "エルギオス", "game": "ドラゴンクエスト9" },
+      { "name": "バド", "game": "ゼルダの伝説 SS" }
+    ],
+    "description": {
+      "ja": "単独行動、直感任せ、結果重視。美学なんて知らない。勝てばいい。お前は生存本能で動く獣だ。社会のルールなんて、お前には関係ない。",
+      "en": "Solo action, instinct-driven, results-focused. Aesthetics? Don't know her. Just win. You're a beast driven by survival instinct. Society's rules don't apply to you."
+    },
+    "deepDescription": {
+      "ja": "マキャベリズムの極致。目的のためなら手段を選ばない。道徳は弱者の言い訳だと信じている。",
+      "en": "Peak Machiavellianism — any means for the end. Morality is an excuse for the weak, and you know it."
+    },
+    "recommendedGames": ["GTA V", "Apex Legends", "Valorant"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "low", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "HLLLH",
+    "name": { "ja": "暗殺者の禅", "en": "The Assassin's Zen" },
+    "character": "隻狼",
+    "characterGame": "Sekiro: Shadows Die Twice",
+    "characterUrl": "https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice",
+    "additionalCharacters": [
+      { "name": "バージル", "game": "Devil May Cry" },
+      { "name": "ウェスカー", "game": "バイオハザード" },
+      { "name": "スコール", "game": "FF8" },
+      { "name": "御剣怜侍", "game": "逆転裁判" },
+      { "name": "ガノンドロフ", "game": "ゼルダの伝説" },
+      { "name": "ギルガメッシュ", "game": "Fate/stay night" },
+      { "name": "明智吾郎", "game": "ペルソナ5" },
+      { "name": "ヨル", "game": "Valorant" },
+      { "name": "雷電将軍", "game": "原神" },
+      { "name": "メタナイト", "game": "星のカービィ" },
+      { "name": "カズヤ", "game": "鉄拳" },
+      { "name": "レッド", "game": "ポケモン赤緑" },
+      { "name": "アカギ", "game": "ポケモンDPt" }
+    ],
+    "description": {
+      "ja": "一人で、計算し、美学を追求する。自分のスキルだけを信じ、完璧な一撃のために何百回も練習する。お前は孤独な職人であり、戦いは芸術だ。",
+      "en": "Alone, calculated, pursuing aesthetics. Trusting only your own skill, practicing hundreds of times for the perfect strike. You're a solitary artisan, and combat is art."
+    },
+    "deepDescription": {
+      "ja": "禅の「一射入魂」。弓道のように、一つ一つの動作に全てを込める。結果ではなく、過程の完璧さを追い求める。",
+      "en": "Zen's 'one shot, whole soul' — like kyudo, pouring everything into each single action. Pursuing perfection of process, not result."
+    },
+    "recommendedGames": ["Sekiro", "Devil May Cry 5 (Vergil)", "Dark Souls III"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "low", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "HLLLL",
+    "name": { "ja": "孤独の狩人", "en": "The Solitary Hunter" },
+    "character": "サムス・アラン",
+    "characterGame": "メトロイド",
+    "characterUrl": "https://en.wikipedia.org/wiki/Samus_Aran",
+    "additionalCharacters": [
+      { "name": "リドリー", "game": "メトロイド" },
+      { "name": "サム・フィッシャー", "game": "Splinter Cell" }
+    ],
+    "description": {
+      "ja": "一人で、計算し、効率的に、攻撃する。美学も仲間も必要ない。賞金稼ぎとして、任務を遂行するだけだ。感情は不要な変数。冷たい精密さと圧倒的火力が、お前の全てだ。",
+      "en": "Solo, calculated, efficient, aggressive. No aesthetics, no allies needed. As a bounty hunter, you simply execute the mission. Emotions are unnecessary variables. Cold precision and overwhelming firepower are everything."
+    },
+    "deepDescription": {
+      "ja": "論理実証主義。検証可能なもの以外は無意味。感情も美学も、データに現れないものには価値がない。",
+      "en": "Logical positivism — anything unverifiable is meaningless. Emotions, aesthetics — if it doesn't show in the data, it has no value."
+    },
+    "recommendedGames": ["メトロイド ドレッド", "Metroid Prime Remastered", "Alien: Isolation"],
+    "axes": { "aggression": "high", "altruism": "low", "cooperation": "low", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "LHHHH",
+    "name": { "ja": "星降る聖女", "en": "The Starlit Saint" },
+    "character": "エアリス",
+    "characterGame": "Final Fantasy VII",
+    "characterUrl": "https://en.wikipedia.org/wiki/Aerith_Gainsborough",
+    "additionalCharacters": [
+      { "name": "天照", "game": "大神" },
+      { "name": "フローラ", "game": "ドラゴンクエスト5" },
+      { "name": "カルネ", "game": "ポケモンXY" },
+      { "name": "ゼルダ", "game": "ゼルダの伝説 SS" },
+      { "name": "ミファー", "game": "ゼルダの伝説 BotW" },
+      { "name": "ロイ", "game": "FE封印の剣" }
+    ],
+    "description": {
+      "ja": "慎重で包容力に満ち、チームの光であり、セトラの直感に導かれ、使命に生きる。お前は戦場の天使だ。究極の自己犠牲を厭わない。殺すことより生かすことに価値を見出す。その優しさが、世界を救う力になる。",
+      "en": "Cautious and compassionate, the team's light, guided by Cetra intuition, living for a mission. You're the battlefield's angel. You don't shy from the ultimate self-sacrifice. Saving matters more than slaying. That kindness becomes the power to save the world."
+    },
+    "deepDescription": {
+      "ja": "レヴィナスの他者論。「他者の顔」に応答する倫理。自分より先に、目の前の他者のことを考える。",
+      "en": "Lévinas' ethics of the Other — responding to 'the face of the Other.' Always thinking of the person in front of you before yourself."
+    },
+    "recommendedGames": ["FF7 Rebirth", "大神", "Journey"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "high", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "LHHHL",
+    "name": { "ja": "心の羅針盤", "en": "The Heart's Compass" },
+    "character": "ティファ",
+    "characterGame": "Final Fantasy VII",
+    "characterUrl": "https://en.wikipedia.org/wiki/Tifa_Lockhart",
+    "additionalCharacters": [
+      { "name": "ノクティス", "game": "FF15" },
+      { "name": "ビアンカ", "game": "ドラゴンクエスト5" },
+      { "name": "成歩堂龍一", "game": "逆転裁判" },
+      { "name": "ピーチ姫", "game": "スーパーマリオ" },
+      { "name": "N", "game": "ポケモンBW" },
+      { "name": "サリア", "game": "ゼルダの伝説 OoT" },
+      { "name": "アデク", "game": "ポケモンBW" },
+      { "name": "カイリ", "game": "Kingdom Hearts" },
+      { "name": "衛宮士郎", "game": "Fate/stay night" },
+      { "name": "藤丸立香", "game": "Fate/Grand Order" },
+      { "name": "マルス", "game": "FE暗黒竜と光の剣" }
+    ],
+    "description": {
+      "ja": "穏やかで慎重。だがチームの精神的な接着剤であり、感覚で人の気持ちを察する。美学より結果を取る現実主義者。お前は派手な英雄ではない。だが、お前がいなければチームは崩壊する。",
+      "en": "Gentle and cautious. But you're the team's emotional glue, sensing others' feelings by instinct. A realist who chooses results over aesthetics. You're no flashy hero — but without you, the team falls apart."
+    },
+    "deepDescription": {
+      "ja": "プラグマティズムの体現者。「真理とは、うまくいくもの」。理想よりも現実に機能するものを選ぶ。",
+      "en": "Pragmatism embodied — 'Truth is what works.' Choosing what functions in reality over lofty ideals."
+    },
+    "recommendedGames": ["FF7 Rebirth", "逆転裁判", "Baldur's Gate 3"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "high", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "LHHLH",
+    "name": { "ja": "鉄壁の参謀長", "en": "The Iron Advisor" },
+    "character": "アナ",
+    "characterGame": "Overwatch",
+    "characterUrl": "https://en.wikipedia.org/wiki/Ana_(Overwatch)",
+    "additionalCharacters": [
+      { "name": "ビビ", "game": "FF9" },
+      { "name": "ユウナ", "game": "FF10" },
+      { "name": "V", "game": "Devil May Cry 5" },
+      { "name": "エックス", "game": "ロックマンX" },
+      { "name": "ゼルダ姫", "game": "ゼルダの伝説" },
+      { "name": "セイバー", "game": "Fate/stay night" },
+      { "name": "鍾離", "game": "原神" },
+      { "name": "シロナ", "game": "ポケモンDPt" },
+      { "name": "シュルク", "game": "ゼノブレイド" },
+      { "name": "ダイゴ", "game": "ポケモンRSE" },
+      { "name": "オモダカ", "game": "ポケモンSV" },
+      { "name": "ラウル", "game": "ゼルダの伝説 OoT" },
+      { "name": "オタコン", "game": "Metal Gear Solid" },
+      { "name": "カズヒラ・ミラー", "game": "Metal Gear Solid V" }
+    ],
+    "description": {
+      "ja": "慎重に、仲間のために、計算し、美学を持って戦う。お前は後方から全てを見通す指揮官だ。華やかな前線は任せる。お前の仕事は、誰よりも正確に判断を下すこと。",
+      "en": "Cautious, for your allies, calculated, with aesthetics. You're the commander who sees everything from the rear. Leave the flashy frontline to others. Your job is making the most accurate calls."
+    },
+    "deepDescription": {
+      "ja": "ストア哲学の実践者。感情に流されず、理性によって状況を制御する。「変えられないものを受け入れ、変えられるものを変える」。",
+      "en": "Stoic philosopher in practice — controlling situations through reason, not emotion. 'Accept what you cannot change, change what you can.'"
+    },
+    "recommendedGames": ["Overwatch 2 (Ana)", "FF10", "Civilization VI"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "high", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "LHHLL",
+    "name": { "ja": "盾の守人", "en": "The Shield Bearer" },
+    "character": "ジル・バレンタイン",
+    "characterGame": "バイオハザード",
+    "characterUrl": "https://en.wikipedia.org/wiki/Jill_Valentine",
+    "additionalCharacters": [
+      { "name": "マシュ・キリエライト", "game": "Fate/Grand Order" },
+      { "name": "ピーチ姫", "game": "スーパーマリオ" },
+      { "name": "ルイージ", "game": "スーパーマリオ" }
+    ],
+    "description": {
+      "ja": "冷静沈着。人を守ることに誇りを持ち、パートナーシップを重視する。分析力に優れ、効率的に動く。美学は求めない。ただ、秩序と安全を守ることが使命だ。",
+      "en": "Cool and composed. You take pride in protecting others and value partnership. Excellent analytical skills, efficient movement. No pursuit of aesthetics. Your mission is simply to maintain order and safety."
+    },
+    "deepDescription": {
+      "ja": "社会契約論の実践者。個人の自由より、秩序と安全を重視する。ルソーの「一般意志」に従う。",
+      "en": "Social contract theorist in practice — valuing order and safety over individual freedom. Following Rousseau's 'general will.'"
+    },
+    "recommendedGames": ["バイオハザード RE:3", "Fate/Grand Order", "Rainbow Six Siege"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "high", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "LHLHH",
+    "name": { "ja": "放浪の賢者", "en": "The Wandering Sage" },
+    "character": "リンク",
+    "characterGame": "ゼルダの伝説: ブレスオブザワイルド",
+    "characterUrl": "https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)",
+    "additionalCharacters": [
+      { "name": "ワンダ", "game": "ワンダと巨像" },
+      { "name": "イコ", "game": "ICO" }
+    ],
+    "description": {
+      "ja": "慎重で仲間思い、でも一人で旅する。直感と美学に従い、世界を探索する。お前は答えを探しているのではない。問いそのものを楽しんでいるのだ。",
+      "en": "Cautious and caring, but traveling alone. Following intuition and aesthetics, exploring the world. You're not searching for answers — you're enjoying the questions themselves."
+    },
+    "deepDescription": {
+      "ja": "ソクラテスの「無知の知」。知らないことを知っている者こそ最も賢い。探求の旅に終わりはない。",
+      "en": "Socratic 'knowing that you don't know' — the wisest are those who know their own ignorance. The journey of inquiry never ends."
+    },
+    "recommendedGames": ["ゼルダの伝説 TotK", "Outer Wilds", "Elden Ring"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "low", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "LHLHL",
+    "name": { "ja": "夢見る旅人", "en": "The Dreaming Traveler" },
+    "character": "カービィ",
+    "characterGame": "星のカービィ",
+    "characterUrl": "https://en.wikipedia.org/wiki/Kirby_(character)",
+    "additionalCharacters": [
+      { "name": "クラウド", "game": "FF7" }
+    ],
+    "description": {
+      "ja": "攻撃的ではない。友達を助けるために旅に出る。基本は一人。完全に直感と本能で動く。美学を追い求めることはない。ただ、目の前の大切なもののために、自然体で歩く。",
+      "en": "Not aggressive. You set out to help friends. Basically solo. Driven entirely by instinct and gut feeling. No pursuit of aesthetics. You simply walk naturally for what matters right in front of you."
+    },
+    "deepDescription": {
+      "ja": "荘子の「逍遥遊」。何にも縛られず、あるがままに遊ぶ。無為自然こそが最高の生き方。",
+      "en": "Zhuangzi's 'Free and Easy Wandering' — unbound by anything, playing as things are. Wu wei is the highest way of living."
+    },
+    "recommendedGames": ["星のカービィ ディスカバリー", "FF7 Rebirth", "Sky: Children of the Light"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "low", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "LHLLH",
+    "name": { "ja": "理想の残骸", "en": "The Remnant of Ideals" },
+    "character": "エミヤ",
+    "characterGame": "Fate/stay night",
+    "characterUrl": "https://en.wikipedia.org/wiki/Archer_(Fate/stay_night)",
+    "additionalCharacters": [
+      { "name": "アルカード", "game": "悪魔城ドラキュラ" }
+    ],
+    "description": {
+      "ja": "皮肉屋だが本質は優しい。「正義の味方」の理想を追い、一人で全てを背負い込む。冷静に分析し、経験に基づいて動く。理想の追求と、その挫折の痛みを知る者。お前の美学は、折れた剣にこそ宿る。",
+      "en": "Cynical but kind at heart. Chasing the ideal of 'a hero of justice,' shouldering everything alone. Moving by cold analysis and experience. You know the pain of pursuing ideals and their collapse. Your aesthetics live in the broken blade."
+    },
+    "deepDescription": {
+      "ja": "キルケゴールの実存的苦悩。「あれか、これか」の選択の中で、自分自身と向き合い続ける。",
+      "en": "Kierkegaard's existential anguish — continuously facing yourself within the 'Either/Or' of choice."
+    },
+    "recommendedGames": ["Fate/stay night", "悪魔城ドラキュラX 月下の夜想曲", "The Last of Us Part II"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "low", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "LHLLL",
+    "name": { "ja": "静かな番人", "en": "The Quiet Warden" },
+    "character": "ジョエル",
+    "characterGame": "The Last of Us",
+    "characterUrl": "https://en.wikipedia.org/wiki/Joel_(The_Last_of_Us)",
+    "additionalCharacters": [
+      { "name": "結城理", "game": "ペルソナ3" }
+    ],
+    "description": {
+      "ja": "慎重で、大切な人のためだけに動く。一人で、冷静に、効率的に。美学は持たない。ただ、守るべきものを守るために、必要なことだけをする。",
+      "en": "Cautious, moving only for those you cherish. Alone, calm, efficient. No aesthetics. Simply doing what's necessary to protect what matters."
+    },
+    "deepDescription": {
+      "ja": "ショーペンハウアーの意志論。世界は苦しみに満ちている。その中で唯一の救いは、大切な者への無条件の愛。",
+      "en": "Schopenhauer's theory of will — the world is full of suffering. The only salvation is unconditional love for those dear to you."
+    },
+    "recommendedGames": ["The Last of Us", "God of War (2018)", "ペルソナ3 Reload"],
+    "axes": { "aggression": "low", "altruism": "high", "cooperation": "low", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "LLHHH",
+    "name": { "ja": "影の指揮者", "en": "The Shadow Conductor" },
+    "character": "クロード",
+    "characterGame": "FE風花雪月",
+    "characterUrl": "https://en.wikipedia.org/wiki/Fire_Emblem:_Three_Houses",
+    "additionalCharacters": [
+      { "name": "リーバル", "game": "ゼルダの伝説 BotW" }
+    ],
+    "description": {
+      "ja": "正面から戦うなんて愚か者のすることだ。お前は裏で糸を引き、チームを使い、直感で人を読む。表の顔は気さくな弓使い、裏の顔は野望を秘めた策略家。その美学は、誰にも本心を見せないことだ。",
+      "en": "Only fools fight head-on. You pull strings from behind, use the team, and read people by instinct. Your public face: a friendly archer. Your hidden face: a schemer with ambitions. Your aesthetics lie in never showing your true self."
+    },
+    "deepDescription": {
+      "ja": "プラトンの哲人王。真に賢い者が支配すべきという思想。民衆は知らなくていい。お前だけが全体像を見ている。",
+      "en": "Plato's Philosopher King — the truly wise should rule. The masses need not know. Only you see the full picture."
+    },
+    "recommendedGames": ["FE風花雪月", "Assassin's Creed", "ゼルダの伝説 BotW"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "high", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "LLHHL",
+    "name": { "ja": "道化師の仮面", "en": "The Jester's Mask" },
+    "character": "ミラージュ",
+    "characterGame": "Apex Legends",
+    "characterUrl": "https://en.wikipedia.org/wiki/Apex_Legends",
+    "additionalCharacters": [
+      { "name": "ヴァン", "game": "FF12" },
+      { "name": "モルガナ", "game": "ペルソナ5" }
+    ],
+    "description": {
+      "ja": "正面から勝負するより騙す。注目されたい欲求がお前を動かす。チームのムードメーカーだが、その裏には家族の喪失を埋めたい孤独がある。即興のホログラムのように、お前の本心は誰にも見せない。",
+      "en": "Rather than fight head-on, you deceive. The craving for attention drives you. Team's mood maker, but behind it lies loneliness from family loss. Like your improvised holograms, you never show your true self."
+    },
+    "deepDescription": {
+      "ja": "アリストテレスの「人間は社会的動物」。ただし、お前の場合は社会を利用する動物。共同体の中で自己利益を最大化する知恵。",
+      "en": "Aristotle's 'man is a social animal' — except in your case, an animal that exploits society. The wisdom of maximizing self-interest within the community."
+    },
+    "recommendedGames": ["Apex Legends", "Among Us", "Dota 2"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "high", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "LLHLH",
+    "name": { "ja": "帝国の建設者", "en": "The Empire Builder" },
+    "character": "たぬきち",
+    "characterGame": "どうぶつの森",
+    "characterUrl": "https://en.wikipedia.org/wiki/Tom_Nook",
+    "additionalCharacters": [
+      { "name": "オルゴ・デミーラ", "game": "ドラゴンクエスト7" },
+      { "name": "ウルノーガ", "game": "ドラゴンクエスト11" }
+    ],
+    "description": {
+      "ja": "慎重に、計算し、コミュニティを動かし、完璧な島を作り上げる。利他に見えるが、全ての道はベルに通じる。お前は優しい笑顔の裏で、帝国を築くビジネスの天才だ。",
+      "en": "Cautious, calculated, moving the community, building the perfect island. Looks altruistic, but every road leads to Bells. Behind that gentle smile, you're a business genius building an empire."
+    },
+    "deepDescription": {
+      "ja": "ライプニッツの最善世界論。この世界をより良いシステムに作り変えるという信念。秩序こそが美。ただし、その秩序の頂点にはお前がいる。",
+      "en": "Leibniz's best of all possible worlds — the conviction to remake this world into a better system. Order is beauty. But you sit at the top of that order."
+    },
+    "recommendedGames": ["あつまれ どうぶつの森", "Stardew Valley", "Cities: Skylines"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "high", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "LLHLL",
+    "name": { "ja": "鉄面の支配者", "en": "The Iron Ruler" },
+    "character": "サカキ",
+    "characterGame": "ポケモン赤緑",
+    "characterUrl": "https://en.wikipedia.org/wiki/Giovanni_(Pok%C3%A9mon)",
+    "additionalCharacters": [
+      { "name": "キングクルール", "game": "ドンキーコング" },
+      { "name": "Dr.ワイリー", "game": "ロックマン" }
+    ],
+    "description": {
+      "ja": "表に出る必要はない。部下を動かし、計算し、結果だけを手にする。美学なんていらない。必要なのは金と権力だ。お前は組織という名の巨大なチェス盤を、誰よりも冷静に支配する。",
+      "en": "No need to step into the spotlight. Move your subordinates, calculate, and claim only the results. No aesthetics needed. All you need is money and power. You dominate the giant chessboard called 'organization' more calmly than anyone."
+    },
+    "deepDescription": {
+      "ja": "ベンサムの功利主義。「最大多数の最大幸福」をシステマティックに追求する。ただし、「最大多数」にはお前だけが含まれている。",
+      "en": "Bentham's utilitarianism — systematically pursuing 'the greatest happiness for the greatest number.' Except 'the greatest number' includes only you."
+    },
+    "recommendedGames": ["ポケモン赤緑", "龍が如く0", "XCOM 2"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "high", "intuition": "low", "mastery": "low" }
+  },
+  {
+    "id": "LLLHH",
+    "name": { "ja": "虚無の芸術家", "en": "The Nihilist Artist" },
+    "character": "ジョーカー",
+    "characterGame": "ペルソナ5",
+    "characterUrl": "https://en.wikipedia.org/wiki/Joker_(Persona)",
+    "additionalCharacters": [
+      { "name": "ヴィンセント", "game": "FF7" },
+      { "name": "ホロウナイト", "game": "Hollow Knight" }
+    ],
+    "description": {
+      "ja": "慎重で、利己的で、孤独を選び、直感と美学に生きる。お前は世界に何も期待しない。だが、自分の美学だけは絶対に裏切らない。その矛盾こそがお前の芸術だ。",
+      "en": "Cautious, self-serving, choosing solitude, living by intuition and aesthetics. You expect nothing from the world. But you never betray your own aesthetics. That contradiction is your art."
+    },
+    "deepDescription": {
+      "ja": "ニヒリズムを超えたニーチェの思想。虚無の中に自ら価値を創造する「永劫回帰」の肯定者。",
+      "en": "Beyond nihilism in Nietzsche's thought — an affirmer of 'eternal recurrence,' creating value in the void."
+    },
+    "recommendedGames": ["ペルソナ5 Royal", "Hades", "Hollow Knight"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "low", "intuition": "high", "mastery": "high" }
+  },
+  {
+    "id": "LLLHL",
+    "name": { "ja": "黄金の略奪者", "en": "The Gold Raider" },
+    "character": "ワリオ",
+    "characterGame": "ワリオランド",
+    "characterUrl": "https://en.wikipedia.org/wiki/Wario",
+    "additionalCharacters": [
+      { "name": "サンズ", "game": "Undertale" },
+      { "name": "スカルキッド", "game": "ゼルダの伝説 ムジュラの仮面" }
+    ],
+    "description": {
+      "ja": "鼻が利く。宝の匂いがすれば、理屈なんて考えない。一人で、自分のためだけに動く。美学？ 効率？ そんなもの知るか。お前が求めるのは目の前の金貨だけだ。純粋な強欲こそ、お前の原動力。",
+      "en": "Your nose knows. When treasure's near, who needs logic? Moving solo, only for yourself. Aesthetics? Efficiency? Who cares. All you want are the gold coins right in front of you. Pure greed is your driving force."
+    },
+    "deepDescription": {
+      "ja": "エピクロスの快楽主義を最も原始的に体現する存在。快楽こそが善、苦痛こそが悪。哲学を極限まで単純化すると、ワリオになる。",
+      "en": "The most primal embodiment of Epicurean hedonism. Pleasure is good, pain is bad. Simplify philosophy to its extreme, and you get Wario."
+    },
+    "recommendedGames": ["ワリオランド", "WarioWare", "Spelunky 2"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "low", "intuition": "high", "mastery": "low" }
+  },
+  {
+    "id": "LLLLH",
+    "name": { "ja": "深淵の求道者", "en": "The Abyss Seeker" },
+    "character": "選ばれた不死者",
+    "characterGame": "Dark Souls",
+    "characterUrl": "https://en.wikipedia.org/wiki/Dark_Souls",
+    "additionalCharacters": [
+      { "name": "リュウ", "game": "ストリートファイター" },
+      { "name": "ゾーマ", "game": "ドラゴンクエスト3" },
+      { "name": "ミルドラース", "game": "ドラゴンクエスト5" },
+      { "name": "デスタムーア", "game": "ドラゴンクエスト6" },
+      { "name": "マツブサ", "game": "ポケモンRSE" }
+    ],
+    "description": {
+      "ja": "慎重で、孤独で、計算し、美学だけを信じる。利己的だが、その利己は「完璧な自分」への追求だ。何度死んでも立ち上がる。それは勝利のためではなく、自分を超えるためだ。",
+      "en": "Cautious, solitary, calculated, believing only in aesthetics. Self-serving, but that self-service is the pursuit of a 'perfect self.' Rising after every death — not for victory, but to transcend yourself."
+    },
+    "deepDescription": {
+      "ja": "シーシュポスの神話。終わりなき苦行の中に幸福を見出す。カミュは言った。「シーシュポスは幸福であると想像しなければならない」。",
+      "en": "The Myth of Sisyphus — finding happiness in endless struggle. As Camus said: 'One must imagine Sisyphus happy.'"
+    },
+    "recommendedGames": ["Dark Souls III", "Elden Ring", "ストリートファイター6"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "low", "intuition": "low", "mastery": "high" }
+  },
+  {
+    "id": "LLLLL",
+    "name": { "ja": "沈黙の観察者", "en": "The Silent Observer" },
+    "character": "ミュウツー",
+    "characterGame": "ポケモン赤緑",
+    "characterUrl": "https://en.wikipedia.org/wiki/Mewtwo",
+    "additionalCharacters": [
+      { "name": "チェル", "game": "Portal" },
+      { "name": "エージェント47", "game": "Hitman" }
+    ],
+    "description": {
+      "ja": "慎重で、孤独で、計算し、効率を追求する。利己的だが、それは生き残るためではない。お前は自分の存在意義を問い続けている。世界を観察する。参加するのではなく、理解するために。全てに距離を置く。その距離こそが、お前の知性だ。",
+      "en": "Cautious, solitary, calculated, pursuing efficiency. Self-serving, but not for survival — you keep questioning the meaning of your own existence. You observe the world. Not to participate, but to understand. Distance from everything — that distance is your intelligence."
+    },
+    "deepDescription": {
+      "ja": "ウィトゲンシュタインの言語哲学。「語り得ぬものについては沈黙しなければならない」。お前は沈黙の中に真実を見る。",
+      "en": "Wittgenstein's philosophy of language — 'Whereof one cannot speak, thereof one must be silent.' You see truth in silence."
+    },
+    "recommendedGames": ["ポケモン赤緑", "Portal 2", "The Witness"],
+    "axes": { "aggression": "low", "altruism": "low", "cooperation": "low", "intuition": "low", "mastery": "low" }
+  }
+]
