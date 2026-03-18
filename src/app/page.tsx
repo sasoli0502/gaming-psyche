@@ -6,6 +6,7 @@ import { NeonText } from "@/components/ui/NeonText";
 import { CyberButton } from "@/components/ui/CyberButton";
 import { QuizEngine } from "@/components/quiz/QuizEngine";
 import { ResultView } from "@/components/result/ResultView";
+import { TypeList } from "@/components/result/TypeList";
 import { AxisScores, Locale } from "@/lib/types";
 import { normalizeScores, findType } from "@/lib/scoring";
 import { t } from "@/lib/i18n";
@@ -13,7 +14,7 @@ import freeQuestions from "@/data/questions/free.json";
 import typesData from "@/data/types/types.json";
 import type { Question, GamerType } from "@/lib/types";
 
-type AppState = "landing" | "quiz" | "result";
+type AppState = "landing" | "quiz" | "result" | "types";
 
 export default function Home() {
   const [appState, setAppState] = useState<AppState>("landing");
@@ -83,6 +84,22 @@ export default function Home() {
             onComplete={handleQuizComplete}
           />
         </motion.div>
+      ) : appState === "types" ? (
+        <motion.div
+          key="types"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          {langSwitch}
+          <TypeList
+            types={types}
+            locale={locale}
+            onClose={() => setAppState(resultData ? "result" : "landing")}
+            highlightId={resultData?.type.id}
+          />
+        </motion.div>
       ) : appState === "result" && resultData ? (
         <motion.div
           key="result"
@@ -100,6 +117,7 @@ export default function Home() {
               setAppState("landing");
               setResultData(null);
             }}
+            onViewTypes={() => setAppState("types")}
           />
         </motion.div>
       ) : (
@@ -182,6 +200,12 @@ export default function Home() {
               >
                 {t(locale, "landing.cta")}
               </CyberButton>
+              <button
+                onClick={() => setAppState("types")}
+                className="block mx-auto mt-6 text-sm font-sans text-white/30 hover:text-dawn-highlight tracking-wide transition-colors duration-300"
+              >
+                {locale === "ja" ? "32タイプ一覧を見る →" : "View all 32 types →"}
+              </button>
             </motion.div>
           </motion.div>
 

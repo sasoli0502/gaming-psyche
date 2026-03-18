@@ -8,7 +8,7 @@ const translations = {
       "FPS・アクションゲームの判断から、あなたの深層心理を哲学的に分析する。",
     "landing.cta": "診断を始める",
     "landing.types": "32タイプの人格分析",
-    "landing.questions": "50の没入型シナリオ",
+    "landing.questions": "30の没入型シナリオ",
     "landing.free": "無料で診断",
 
     // Quiz
@@ -42,7 +42,7 @@ const translations = {
       "A philosophical analysis of your psyche through FPS & action game decisions.",
     "landing.cta": "Start Diagnosis",
     "landing.types": "32 Personality Types",
-    "landing.questions": "50 Immersive Scenarios",
+    "landing.questions": "30 Immersive Scenarios",
     "landing.free": "Free Analysis",
 
     "quiz.progress": "{{current}} / {{total}}",

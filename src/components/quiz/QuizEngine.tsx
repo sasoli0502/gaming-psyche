@@ -13,6 +13,7 @@ interface QuizState {
   currentIndex: number;
   scores: AxisScores;
   answers: { questionId: string; optionId: string }[];
+  scoreHistory: AxisScores[]; // stack of scores before each answer
   isComplete: boolean;
 }
 
@@ -24,6 +25,7 @@ type QuizAction =
       scores: AxisScores;
       totalQuestions: number;
     }
+  | { type: "GO_BACK" }
   | { type: "RESET" };
 
 function quizReducer(state: QuizState, action: QuizAction): QuizState {
@@ -37,7 +39,19 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
           ...state.answers,
           { questionId: action.questionId, optionId: action.optionId },
         ],
+        scoreHistory: [...state.scoreHistory, state.scores],
         isComplete: newIndex >= action.totalQuestions,
+      };
+    }
+    case "GO_BACK": {
+      if (state.currentIndex === 0) return state;
+      const prevScores = state.scoreHistory[state.scoreHistory.length - 1];
+      return {
+        currentIndex: state.currentIndex - 1,
+        scores: prevScores,
+        answers: state.answers.slice(0, -1),
+        scoreHistory: state.scoreHistory.slice(0, -1),
+        isComplete: false,
       };
     }
     case "RESET":
@@ -45,6 +59,7 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
         currentIndex: 0,
         scores: { ...INITIAL_SCORES },
         answers: [],
+        scoreHistory: [],
         isComplete: false,
       };
     default:
@@ -63,6 +78,7 @@ export function QuizEngine({ questions, locale, onComplete }: QuizEngineProps) {
     currentIndex: 0,
     scores: { ...INITIAL_SCORES },
     answers: [],
+    scoreHistory: [],
     isComplete: false,
   });
 
@@ -99,6 +115,13 @@ export function QuizEngine({ questions, locale, onComplete }: QuizEngineProps) {
     [isTransitioning, questions, state, onComplete]
   );
 
+  const handleGoBack = useCallback(() => {
+    if (isTransitioning || state.currentIndex === 0) return;
+    setIsTransitioning(true);
+    dispatch({ type: "GO_BACK" });
+    setTimeout(() => setIsTransitioning(false), 400);
+  }, [isTransitioning, state.currentIndex]);
+
   if (state.isComplete) {
     return null;
   }
@@ -119,6 +142,17 @@ export function QuizEngine({ questions, locale, onComplete }: QuizEngineProps) {
       <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-dawn-gold/5 blur-[120px] pointer-events-none" />
       
       <div className="w-full max-w-2xl z-10">
+        <div className="flex items-center gap-3 mb-2">
+          {state.currentIndex > 0 && (
+            <button
+              onClick={handleGoBack}
+              className="text-white/40 hover:text-dawn-highlight text-sm font-sans tracking-wide transition-colors duration-300 flex items-center gap-1"
+            >
+              <span>←</span>
+              <span>{locale === "ja" ? "戻る" : "Back"}</span>
+            </button>
+          )}
+        </div>
         <ProgressBar
           current={state.currentIndex + 1}
           total={questions.length}

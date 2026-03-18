@@ -14,6 +14,7 @@ interface ResultViewProps {
   scores: AxisScores;
   locale: Locale;
   onRestart: () => void;
+  onViewTypes?: () => void;
 }
 
 // Generate MBTI-style code from type axes
@@ -28,7 +29,7 @@ function generateCode(type: GamerType): string {
   return letters.join("");
 }
 
-export function ResultView({ type, scores, locale, onRestart }: ResultViewProps) {
+export function ResultView({ type, scores, locale, onRestart, onViewTypes }: ResultViewProps) {
   const [showFloatingTop, setShowFloatingTop] = useState(false);
 
   useEffect(() => {
@@ -58,14 +59,33 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
       ? `Gaming Psyche で診断したら ${type.character}（${type.characterGame}）タイプだった！ [${typeCode}] #GamingPsyche`
       : `My Gaming Psyche result: ${type.character} from ${type.characterGame}! [${typeCode}] #GamingPsyche`;
 
-  const handleShare = () => {
-    const url = typeof window !== "undefined" ? window.location.href : "";
+  const [shareLabel, setShareLabel] = useState(t(locale, "result.share"));
+
+  const handleShare = async () => {
+    const url = typeof window !== "undefined" ? window.location.origin + window.location.pathname : "";
     const text = `${shareText}\n\n${url}`;
 
-    if (navigator.share) {
-      navigator.share({ text, url });
-    } else {
-      navigator.clipboard.writeText(text);
+    try {
+      if (navigator.share) {
+        await navigator.share({ text, url });
+      } else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(text);
+        setShareLabel(locale === "ja" ? "コピーしました！" : "Copied!");
+        setTimeout(() => setShareLabel(t(locale, "result.share")), 2000);
+      } else {
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        setShareLabel(locale === "ja" ? "コピーしました！" : "Copied!");
+        setTimeout(() => setShareLabel(t(locale, "result.share")), 2000);
+      }
+    } catch {
+      // User cancelled share or permission denied
     }
   };
 
@@ -269,8 +289,13 @@ export function ResultView({ type, scores, locale, onRestart }: ResultViewProps)
         className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-8"
       >
         <CyberButton onClick={handleShare} size="lg">
-          {t(locale, "result.share")}
+          {shareLabel}
         </CyberButton>
+        {onViewTypes && (
+          <CyberButton variant="ghost" onClick={onViewTypes} size="lg">
+            {locale === "ja" ? "32タイプ一覧" : "All 32 Types"}
+          </CyberButton>
+        )}
         <CyberButton variant="ghost" onClick={onRestart} size="lg">
           {t(locale, "common.backToTop")}
         </CyberButton>
