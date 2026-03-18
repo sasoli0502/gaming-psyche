@@ -295,37 +295,22 @@ function TypeDetail({ type, locale }: { type: GamerType; locale: Locale }) {
     | { name: string; game: string }[]
     | undefined;
 
+  // Merge main character into additionalCharacters for unified display
+  const allCharacters = [
+    { name: type.character, game: type.characterGame, url: type.characterUrl },
+    ...(additionalCharacters || []).map((c) => ({ name: c.name, game: c.game, url: "" })),
+  ];
+
   return (
     <div className="space-y-10">
-      {/* Character Header */}
+      {/* Type Header — title (称号) is the star, no character name here */}
       <div className="text-center">
-        <div className="text-xs font-sans tracking-[0.3em] text-dawn-gold/40 uppercase mb-4">
+        <div className="text-xs font-sans tracking-[0.3em] text-dawn-gold/40 uppercase mb-6">
           {code}
         </div>
-        <h1 className="text-4xl md:text-6xl font-sans font-light text-dawn-highlight tracking-tight mb-3">
-          {type.character}
-        </h1>
-        <div className="text-lg text-dawn-gold/70 italic mb-4">
-          {type.characterGame}
-        </div>
-        <h2 className="text-xl md:text-2xl font-sans font-light text-white/70 tracking-wide">
+        <h1 className="text-4xl md:text-6xl font-sans font-light text-dawn-highlight tracking-tight mb-4">
           {lt(locale, type.name)}
-        </h2>
-      </div>
-
-      {/* Wikipedia Link */}
-      <div className="text-center">
-        <a
-          href={type.characterUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-dawn-gold/30 rounded-full transition-all duration-300"
-        >
-          <span className="text-sm font-sans text-white/70 hover:text-dawn-highlight tracking-wide">
-            {locale === "ja" ? "このキャラについて詳しく" : "Learn more about this character"}
-          </span>
-          <span className="text-dawn-gold/60">→</span>
-        </a>
+        </h1>
       </div>
 
       {/* Axis Breakdown */}
@@ -384,29 +369,27 @@ function TypeDetail({ type, locale }: { type: GamerType; locale: Locale }) {
         </p>
       </div>
 
-      {/* Additional Characters */}
-      {additionalCharacters && additionalCharacters.length > 0 && (
-        <div>
-          <h3 className="text-xs font-sans tracking-[0.3em] text-dawn-gold/50 uppercase mb-4 text-center">
-            {locale === "ja" ? "同タイプのキャラクター" : "Characters of the Same Type"}
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {additionalCharacters.map((char, i) => (
-              <div
-                key={i}
-                className="px-4 py-2.5 bg-white/[0.03] border border-white/10 rounded-sm text-center"
-              >
-                <div className="text-sm font-sans text-dawn-highlight/80 mb-0.5">
-                  {char.name}
-                </div>
-                <div className="text-[10px] text-white/30 italic">
-                  {char.game}
-                </div>
+      {/* Characters of this type — main + additional, all equal */}
+      <div>
+        <h3 className="text-xs font-sans tracking-[0.3em] text-dawn-gold/50 uppercase mb-6 text-center">
+          {locale === "ja" ? "このタイプのキャラクター" : "Characters of This Type"}
+        </h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {allCharacters.map((char, i) => (
+            <div
+              key={i}
+              className="p-3 bg-white/[0.03] border border-white/10 rounded-sm text-center hover:border-dawn-gold/30 transition-colors duration-300"
+            >
+              <div className="text-sm font-sans text-dawn-highlight/80 mb-1">
+                {char.name}
               </div>
-            ))}
-          </div>
+              <div className="text-[10px] text-white/30 italic">
+                {char.game}
+              </div>
+            </div>
+          ))}
         </div>
-      )}
+      </div>
 
       {/* Recommended Games */}
       <div>
