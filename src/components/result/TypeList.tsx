@@ -247,8 +247,8 @@ export function TypeList({ types, locale, onClose, highlightId }: TypeListProps)
                           : "bg-white/[0.02] border-white/10 hover:border-dawn-gold/30 hover:bg-white/5"
                       }`}
                     >
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-sans text-dawn-gold/50 tracking-[0.15em]">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-xs font-sans text-dawn-gold/60 tracking-[0.2em]">
                           {code}
                         </span>
                         {isHighlighted && (
@@ -257,13 +257,7 @@ export function TypeList({ types, locale, onClose, highlightId }: TypeListProps)
                           </span>
                         )}
                       </div>
-                      <div className="text-lg font-sans font-light text-dawn-highlight mb-0.5 truncate">
-                        {type.character}
-                      </div>
-                      <div className="text-xs text-dawn-gold/60 italic mb-1">
-                        {type.characterGame}
-                      </div>
-                      <div className="text-xs text-white/40 font-light">
+                      <div className="text-base font-sans font-light text-dawn-highlight truncate">
                         {lt(locale, type.name)}
                       </div>
                     </motion.button>
