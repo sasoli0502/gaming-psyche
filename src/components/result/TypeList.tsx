@@ -295,10 +295,25 @@ function TypeDetail({ type, locale }: { type: GamerType; locale: Locale }) {
     | { name: string; game: string }[]
     | undefined;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const typeAny = type as any;
+
   // Merge main character into additionalCharacters for unified display
   const allCharacters = [
-    { name: type.character, game: type.characterGame, url: type.characterUrl },
-    ...(additionalCharacters || []).map((c) => ({ name: c.name, game: c.game, url: "" })),
+    {
+      name: type.character,
+      game: type.characterGame,
+      url: type.characterUrl,
+      description: typeAny.characterDescription as { ja: string; en: string } | undefined,
+      reasoning: typeAny.characterReasoning as { ja: string; en: string } | undefined,
+    },
+    ...(additionalCharacters || []).map((c) => ({
+      name: c.name,
+      game: c.game,
+      url: (c as any).url as string || "",
+      description: (c as any).description as { ja: string; en: string } | undefined,
+      reasoning: (c as any).reasoning as { ja: string; en: string } | undefined,
+    })),
   ];
 
   return (
@@ -374,20 +389,73 @@ function TypeDetail({ type, locale }: { type: GamerType; locale: Locale }) {
         <h3 className="text-xs font-sans tracking-[0.3em] text-dawn-gold/50 uppercase mb-6 text-center">
           {locale === "ja" ? "このタイプのキャラクター" : "Characters of This Type"}
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          {allCharacters.map((char, i) => (
-            <div
-              key={i}
-              className="p-3 bg-white/[0.03] border border-white/10 rounded-sm text-center hover:border-dawn-gold/30 transition-colors duration-300"
-            >
-              <div className="text-sm font-sans text-dawn-highlight/80 mb-1">
-                {char.name}
-              </div>
-              <div className="text-[10px] text-white/30 italic">
-                {char.game}
-              </div>
-            </div>
-          ))}
+        <div className="space-y-4">
+          {allCharacters.map((char, i) => {
+            const hasUrl = !!char.url;
+            const Wrapper = hasUrl ? "a" : "div";
+            const wrapperProps = hasUrl
+              ? { href: char.url, target: "_blank" as const, rel: "noopener noreferrer" }
+              : {};
+
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05, duration: 0.3 }}
+              >
+                <Wrapper
+                  {...wrapperProps}
+                  className={`block bg-white/[0.02] border border-white/10 rounded-sm p-5 transition-all duration-300 ${
+                    hasUrl
+                      ? "cursor-pointer hover:border-dawn-gold/40 hover:bg-white/[0.05] hover:shadow-[0_0_20px_rgba(255,184,77,0.08)] group"
+                      : ""
+                  }`}
+                >
+                  {/* Character header */}
+                  <div className="flex items-baseline gap-3 mb-3">
+                    <span className={`text-base font-sans font-light ${hasUrl ? "text-dawn-highlight group-hover:text-dawn-gold" : "text-dawn-highlight"} transition-colors duration-300`}>
+                      {char.name}
+                    </span>
+                    <span className="text-[11px] text-white/30 italic">
+                      {char.game}
+                    </span>
+                    {hasUrl && (
+                      <span className="ml-auto text-[10px] text-white/0 group-hover:text-white/30 transition-colors duration-300 tracking-wider">
+                        {locale === "ja" ? "詳しく見る →" : "Learn more →"}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Description */}
+                  {char.description && (
+                    <p className="text-sm text-white/55 leading-relaxed mb-3 font-light">
+                      {locale === "ja" ? char.description.ja : char.description.en}
+                    </p>
+                  )}
+
+                  {/* Reasoning */}
+                  {char.reasoning && (
+                    <div className="border-l-2 border-dawn-gold/20 pl-4">
+                      <p className="text-xs text-white/40 leading-relaxed italic">
+                        <span className="text-dawn-gold/50 not-italic text-[10px] tracking-wider uppercase mr-2">
+                          {locale === "ja" ? "なぜこのタイプか" : "Why this type"}
+                        </span>
+                        {locale === "ja" ? char.reasoning.ja : char.reasoning.en}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Fallback: no description yet */}
+                  {!char.description && !char.reasoning && (
+                    <p className="text-xs text-white/20 italic">
+                      {locale === "ja" ? "解説準備中" : "Description coming soon"}
+                    </p>
+                  )}
+                </Wrapper>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
 
