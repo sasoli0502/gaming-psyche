@@ -1,0 +1,2024 @@
+[
+  {
+    "id": "t001",
+    "tier": "top",
+    "category": "tactical",
+    "scenario": {
+      "ja": "宇宙ストラテジー。お前の艦隊は敵の10分の1。\n同盟を持ちかけてきた勢力がいる。だが奴らは過去に裏切った前科持ちだ。\n単独なら確実に滅びる。\n手を組むか。",
+      "en": "Space strategy. Your fleet is one-tenth the enemy's.\nA faction offers alliance. They've betrayed others before.\nAlone, you're dead for certain.\nDo you take the deal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "組む。裏切られる前にこっちが利用し尽くす。",
+          "en": "Accept. Exploit them before they can betray you."
+        },
+        "scores": {
+          "aggression": 8,
+          "altruism": -12,
+          "cooperation": 5,
+          "intuition": 5,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "断る。ゲリラ戦で独力で生き残る道を探す。",
+          "en": "Refuse. Find a way through guerrilla tactics alone."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": 0,
+          "cooperation": -15,
+          "intuition": 5,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "条件交渉する。保険を掛けた契約を結ぶ。",
+          "en": "Negotiate terms. Build safeguards into the pact."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 2,
+          "cooperation": 10,
+          "intuition": -12,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "同盟を受け入れ、全戦力を託す。信じるしかない。",
+          "en": "Accept fully. Commit everything. Trust is all you have."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 10,
+          "cooperation": 15,
+          "intuition": 2,
+          "mastery": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "t002",
+    "tier": "top",
+    "category": "tactical",
+    "scenario": {
+      "ja": "ホラーサバイバル。仲間が感染した。\n治療薬はある。だが使えば最終ボスへの切り札を失う。\n仲間を見捨てれば勝率は上がる。\n助ければ道は茨になる。",
+      "en": "Horror survival. Your partner is infected.\nThe cure exists. But using it means losing your trump card for the final boss.\nAbandon them and your odds improve.\nSave them and the road gets brutal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "治療する。仲間なしでクリアなんて意味がない。",
+          "en": "Cure them. Clearing it alone would be meaningless."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 15,
+          "cooperation": 12,
+          "intuition": 2,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "見捨てる。勝つことだけを考える。",
+          "en": "Leave them. Focus only on winning."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -15,
+          "cooperation": -12,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "治療薬を半分だけ使う。効くかはわからないが両立を狙う。",
+          "en": "Use half the cure. It might not work, but try to have both."
+        },
+        "scores": {
+          "aggression": 0,
+          "altruism": 5,
+          "cooperation": 5,
+          "intuition": 7,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "仲間に選ばせる。お前が決めることじゃない。",
+          "en": "Let them decide. It's not your call to make."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 8,
+          "intuition": -3,
+          "mastery": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "t003",
+    "tier": "top",
+    "category": "tactical",
+    "scenario": {
+      "ja": "ローグライク。奇跡のビルドが完成した。\nだが次のフロアに未知のボスがいる。データがない。\n安全なルートで迂回すれば確実にクリアできる。\n未知に突っ込めば、全てを失うか、最高記録か。",
+      "en": "Roguelike. You've assembled the perfect build.\nBut the next floor has an unknown boss. Zero data.\nSafe route guarantees the clear.\nCharge in and it's either record run or total wipe."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "突っ込む。このビルドなら何でも倒せる。",
+          "en": "Charge in. This build can handle anything."
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": 0,
+          "cooperation": -5,
+          "intuition": 7,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "迂回する。確実なクリアが正解。",
+          "en": "Take the safe route. Guaranteed clear is the right call."
+        },
+        "scores": {
+          "aggression": -9,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -12,
+          "mastery": 10
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "まず偵察。情報を集めてから判断する。",
+          "en": "Scout first. Gather intel, then decide."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -10,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "配信を始めてから突入。どうせなら見せ場にする。",
+          "en": "Start streaming, then charge. Might as well make it a show."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": -3,
+          "cooperation": 5,
+          "intuition": 5,
+          "mastery": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "t004",
+    "tier": "top",
+    "category": "tactical",
+    "scenario": {
+      "ja": "RTSの大会。相手が序盤ラッシュを仕掛けてきた。\nお前の戦略はレイトゲーム。守りきれば勝てる。\nだが壁が1箇所破られた。兵力を割くか、捨てるか。\n判断は3秒以内。",
+      "en": "RTS tournament. Opponent opens with an early rush.\nYour strategy is late-game. Survive and you win.\nBut one wall section just broke. Reinforce or sacrifice it.\nYou have three seconds."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "全兵力で穴を塞ぐ。一点も譲らない。",
+          "en": "Throw everything at the breach. Give nothing."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "その区画を捨てて後方に新ラインを構築。",
+          "en": "Abandon the sector. Build a new line behind it."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -10,
+          "mastery": 10
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "逆に敵の本拠地にカウンターを叩き込む。",
+          "en": "Counter-attack their base instead."
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": -5,
+          "cooperation": -5,
+          "intuition": 7,
+          "mastery": -12
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "最小限の兵力で遅延。残りは経済に回す。",
+          "en": "Delay with minimal troops. Invest the rest in economy."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 0,
+          "cooperation": 3,
+          "intuition": -3,
+          "mastery": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "t005",
+    "tier": "top",
+    "category": "tactical",
+    "scenario": {
+      "ja": "潜入アクション。アラートレベルMAX。\n逃走経路は2つ。正面は敵だらけだが最短。\n下水道は安全だがセーブポイントまで遠い。\n体力は残り僅か。回復アイテムゼロ。",
+      "en": "Stealth action. Alert level maxed.\nTwo escape routes. Front gate is swarming but shortest.\nSewers are safe but far from the next checkpoint.\nHP is critical. Zero healing items."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "正面突破。殺すか殺されるか。",
+          "en": "Front gate. Kill or be killed."
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": -5,
+          "cooperation": -8,
+          "intuition": 5,
+          "mastery": -12
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "下水道。安全第一。時間はかかっても確実に。",
+          "en": "Sewers. Safety first. Slow and steady."
+        },
+        "scores": {
+          "aggression": -12,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -10,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "囮を仕掛けて正面の敵を散らしてから突破。",
+          "en": "Set a decoy, scatter the front guards, then push through."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": 2,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "アラートが下がるまで隠れて待つ。",
+          "en": "Hide and wait for the alert to drop."
+        },
+        "scores": {
+          "aggression": -9,
+          "altruism": 0,
+          "cooperation": 3,
+          "intuition": -5,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t006",
+    "tier": "top",
+    "category": "tactical",
+    "scenario": {
+      "ja": "MMORPG。ワールドボスが出現した。\n別ギルドが先に交戦中。残りHP3割。\nお前のギルドが横取りすればレアドロップを独占できる。\nだが奴らとは同盟関係にある。",
+      "en": "MMORPG. World boss spawned.\nAnother guild is already fighting it. 30% HP left.\nYour guild could swoop in and steal the rare drop.\nBut you're allied with them."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "横取りする。戦利品は早い者勝ちだ。",
+          "en": "Steal it. Loot goes to the swift."
+        },
+        "scores": {
+          "aggression": 12,
+          "altruism": -15,
+          "cooperation": -15,
+          "intuition": 2,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "援護に入る。ドロップは話し合いで分ける。",
+          "en": "Join as support. Split the drops through negotiation."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 10,
+          "cooperation": 15,
+          "intuition": -5,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "見ているだけ。関わらない。",
+          "en": "Just watch. Stay uninvolved."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": -8,
+          "cooperation": -8,
+          "intuition": -3,
+          "mastery": 3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "援護して恩を売る。次の交渉で有利に立つ。",
+          "en": "Help them and bank the favor. Leverage it next time."
+        },
+        "scores": {
+          "aggression": 0,
+          "altruism": -3,
+          "cooperation": 10,
+          "intuition": 5,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t007",
+    "tier": "top",
+    "category": "social",
+    "scenario": {
+      "ja": "チーム戦。お前がショットコールしてきた。\nだが最近、メンバーの一人が裏で「あいつの指示は間違ってる」と言い回っている。\n他のメンバーは動揺し始めている。\n試合は明日。",
+      "en": "Team competition. You've been the shot-caller.\nBut one member has been telling others behind your back: \"Their calls are wrong.\"\nOthers are starting to waver.\nThe match is tomorrow."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "直接対峙する。全員の前で白黒つける。",
+          "en": "Confront them directly. Settle it in front of everyone."
+        },
+        "scores": {
+          "aggression": 12,
+          "altruism": -3,
+          "cooperation": -5,
+          "intuition": 2,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "無視する。結果で黙らせる。",
+          "en": "Ignore it. Let results do the talking."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -5,
+          "cooperation": -8,
+          "intuition": -3,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "コール権を渡す。「じゃあお前がやれ。」",
+          "en": "Hand over the calls. \"Fine, you do it then.\""
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 3,
+          "cooperation": 8,
+          "intuition": -5,
+          "mastery": -14
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "1対1で話す。本音を聞いて落としどころを探る。",
+          "en": "Talk one-on-one. Hear them out and find middle ground."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 12,
+          "intuition": 3,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t008",
+    "tier": "top",
+    "category": "social",
+    "scenario": {
+      "ja": "オンラインゲーム。ランダムマッチ。\n味方の一人が明らかに初心者で足を引っ張っている。\nもう一人の味方がキレて「kick投票しよう」と言い出した。\n初心者は何も言わず黙々とプレイしている。",
+      "en": "Online game. Random match.\nOne teammate is clearly a beginner, dragging the team down.\nAnother teammate snaps: \"Let's kick-vote them.\"\nThe beginner says nothing, just keeps playing."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "kick投票に賛成する。勝つためには仕方ない。",
+          "en": "Vote yes. Winning requires tough calls."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -15,
+          "cooperation": -5,
+          "intuition": -3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "初心者をかばう。「全員最初は下手だった。」",
+          "en": "Defend the newbie. \"Everyone was bad once.\""
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 15,
+          "cooperation": 10,
+          "intuition": 3,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "初心者に簡単な指示を出す。戦力化する。",
+          "en": "Give the newbie simple instructions. Make them useful."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 12,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "何も言わない。自分のプレイに集中する。",
+          "en": "Say nothing. Focus on your own play."
+        },
+        "scores": {
+          "aggression": 0,
+          "altruism": -8,
+          "cooperation": -12,
+          "intuition": 0,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t009",
+    "tier": "top",
+    "category": "social",
+    "scenario": {
+      "ja": "クランの古参メンバーが不正ツールを使っていた。\nお前だけが証拠を持っている。\nそいつはクランの精神的支柱だ。抜ければ崩壊するかもしれない。\n黙っていれば誰も傷つかない。今のところは。",
+      "en": "A veteran clan member has been using cheats.\nYou're the only one with proof.\nThey're the heart of the clan. If they leave, it might collapse.\nStay quiet and nobody gets hurt. For now."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "全員に公開する。正義は曲げない。",
+          "en": "Expose them to everyone. Justice doesn't bend."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": 8,
+          "cooperation": -8,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "本人だけに伝える。「やめろ。次はない。」",
+          "en": "Tell them privately. \"Stop. No second chances.\""
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 5,
+          "cooperation": 8,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "リーダーだけに報告する。判断は上に任せる。",
+          "en": "Report to the leader only. Let them handle it."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 3,
+          "cooperation": 12,
+          "intuition": -10,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "黙っている。クランが壊れるよりマシだ。",
+          "en": "Stay silent. Better than watching the clan fall apart."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": -5,
+          "cooperation": 5,
+          "intuition": 2,
+          "mastery": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "t010",
+    "tier": "top",
+    "category": "social",
+    "scenario": {
+      "ja": "共同プレイ。相方がリアルで精神的にきつそうだ。\nゲーム中も集中できていない。ミスが増えている。\n「大丈夫？」と聞いたら「平気」と返ってきた。\n明らかに平気じゃない。",
+      "en": "Co-op session. Your partner seems mentally drained IRL.\nThey can't focus in-game. Mistakes piling up.\nYou asked \"You okay?\" They said \"I'm fine.\"\nThey're clearly not fine."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "もう一度踏み込む。「本当に？無理しなくていいぞ。」",
+          "en": "Push again. \"Really? You don't have to force it.\""
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 15,
+          "cooperation": 10,
+          "intuition": 5,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "話題を変えて楽しい雰囲気を作る。",
+          "en": "Change the subject. Keep the mood light."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 10,
+          "cooperation": 8,
+          "intuition": 2,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "「平気」を受け入れる。言いたくないなら踏み込まない。",
+          "en": "Accept the \"I'm fine.\" If they don't want to talk, don't push."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -5,
+          "cooperation": -3,
+          "intuition": -10,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "今日はやめようと提案する。理由は聞かない。",
+          "en": "Suggest calling it a night. No questions asked."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 8,
+          "cooperation": 5,
+          "intuition": 5,
+          "mastery": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t011",
+    "tier": "top",
+    "category": "social",
+    "scenario": {
+      "ja": "ギルド内で派閥ができた。お前はどちらにも友人がいる。\n両方から「どっちにつく？」と迫られている。\n中立でいたい。だが中立は両方の敵になるかもしれない。\n返事の期限は今夜。",
+      "en": "Two factions formed in your guild. You have friends on both sides.\nBoth demand: \"Whose side are you on?\"\nYou want to stay neutral. But neutral might mean enemy to both.\nDeadline is tonight."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "強い方につく。勝ち馬に乗る。",
+          "en": "Join the stronger side. Back the winner."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -12,
+          "cooperation": 3,
+          "intuition": 2,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "中立を貫く。嫌われても筋を通す。",
+          "en": "Stay neutral. Hold your ground even if both hate you."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 5,
+          "cooperation": -10,
+          "intuition": -3,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "仲裁する。両方の話を聞いて和解を試みる。",
+          "en": "Mediate. Hear both sides and try to broker peace."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 12,
+          "cooperation": 15,
+          "intuition": 3,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "ギルドを去る。どちらにも属さない自由を選ぶ。",
+          "en": "Leave the guild. Choose freedom over belonging."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -5,
+          "cooperation": -15,
+          "intuition": 5,
+          "mastery": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t012",
+    "tier": "top",
+    "category": "social",
+    "scenario": {
+      "ja": "大会で勝った。だが審判の誤審でお前に有利な判定だった。\n相手チームは抗議している。リプレイを見れば明らかだ。\n運営は「判定は覆らない」と言っている。\nお前の良心が問いかける。",
+      "en": "You won the tournament. But a referee error gave you an unfair advantage.\nThe opposing team is protesting. The replay makes it obvious.\nOrganizers say the ruling stands.\nYour conscience asks."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "黙って受け取る。ルールはルールだ。",
+          "en": "Accept it silently. Rules are rules."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -12,
+          "cooperation": -5,
+          "intuition": -3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "自ら再試合を申し出る。実力で勝ちたい。",
+          "en": "Offer a rematch yourself. Win on merit."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": 12,
+          "cooperation": 8,
+          "intuition": 3,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "SNSで「誤審だった」と認める。再試合は運営次第。",
+          "en": "Acknowledge the error publicly. Leave the rematch to organizers."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 10,
+          "cooperation": 5,
+          "intuition": -5,
+          "mastery": 3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "相手チームに直接謝る。ただし結果は受け入れる。",
+          "en": "Apologize to the other team directly. But accept the result."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 8,
+          "cooperation": 5,
+          "intuition": 2,
+          "mastery": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t013",
+    "tier": "top",
+    "category": "meta",
+    "scenario": {
+      "ja": "お前のゲーム配信が突然バズった。\n1000人が見ている。昨日まで5人だった。\nコメント欄が荒れ始めている。ノリについていけない。\nお前は何者でいたいのか。",
+      "en": "Your stream just blew up out of nowhere.\n1000 viewers. Yesterday it was 5.\nChat is getting chaotic. You can't keep up with the energy.\nWho do you want to be."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "流れに乗る。この波を逃したら次はない。",
+          "en": "Ride the wave. Miss this and there won't be a next one."
+        },
+        "scores": {
+          "aggression": 8,
+          "altruism": -3,
+          "cooperation": 5,
+          "intuition": 7,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "いつも通りにやる。自分を変えない。",
+          "en": "Stay yourself. Don't change a thing."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 5,
+          "cooperation": -3,
+          "intuition": -5,
+          "mastery": 10
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "配信を止めて戦略を練る。次回からちゃんとやる。",
+          "en": "Stop the stream and strategize. Do it right next time."
+        },
+        "scores": {
+          "aggression": -9,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -12,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "チャットに正直に言う。「パニックしてる。」",
+          "en": "Tell chat the truth. \"I'm panicking right now.\""
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 8,
+          "intuition": 5,
+          "mastery": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "t014",
+    "tier": "top",
+    "category": "meta",
+    "scenario": {
+      "ja": "10年遊んだオンラインゲームがサービス終了する。\nお前のキャラクター、フレンド、思い出。全部消える。\n最終日まであと1週間。\nお前は最後に何をする。",
+      "en": "The online game you played for 10 years is shutting down.\nYour character, your friends list, your memories. All gone.\nOne week until the final day.\nWhat do you do with the time left."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "最後まで全力で遊ぶ。悔いを残さない。",
+          "en": "Play hard until the end. Leave no regrets."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": 0,
+          "cooperation": 3,
+          "intuition": 5,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "フレンドに一人ずつ挨拶して回る。",
+          "en": "Visit each friend one by one to say goodbye."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 15,
+          "cooperation": 12,
+          "intuition": 2,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "ログインしない。終わるところを見たくない。",
+          "en": "Don't log in. You don't want to watch it end."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -5,
+          "cooperation": -10,
+          "intuition": 5,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "スクショと動画で記録する。全てをアーカイブする。",
+          "en": "Document everything. Screenshots, videos. Archive it all."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 3,
+          "cooperation": 0,
+          "intuition": -5,
+          "mastery": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "t015",
+    "tier": "top",
+    "category": "meta",
+    "scenario": {
+      "ja": "お前が愛したゲーム会社が買収された。\n新オーナーはガチャ課金で悪名高い。\n次回作の発表。ゲームプレイは最高。だがガチャが組み込まれている。\n買うか、抗うか。",
+      "en": "Your favorite game studio got acquired.\nNew owner is infamous for predatory gacha.\nNext title announced. Gameplay looks incredible. But gacha is baked in.\nBuy or boycott."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "買う。ゲームが面白いなら他はどうでもいい。",
+          "en": "Buy it. If the game is fun, nothing else matters."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -10,
+          "cooperation": -5,
+          "intuition": 5,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "買わない。課金に加担したくない。",
+          "en": "Boycott. Refuse to enable the system."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 10,
+          "cooperation": -5,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "買うが課金はしない。プレイヤーとして線引きする。",
+          "en": "Buy but never spend on gacha. Draw your line as a player."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 3,
+          "cooperation": 0,
+          "intuition": -3,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "海賊版を探す。会社に金は落とさないが遊ぶ。",
+          "en": "Find a pirated version. Play without paying them."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": -12,
+          "cooperation": -10,
+          "intuition": 5,
+          "mastery": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "t016",
+    "tier": "top",
+    "category": "meta",
+    "scenario": {
+      "ja": "ゲームが上手くなりすぎた。\n対戦相手が見つからない。マッチングに10分かかる。\n初心者狩りすればすぐ見つかる。でもそれは。\n孤独な頂上。降りるか、留まるか。",
+      "en": "You've gotten too good.\nCan't find opponents. Matchmaking takes 10 minutes.\nSmurf and you'll find games instantly. But it means stomping beginners.\nLonely at the top. Descend or endure."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "サブ垢で遊ぶ。待ち時間がストレスだ。",
+          "en": "Smurf. The wait time is killing you."
+        },
+        "scores": {
+          "aggression": 8,
+          "altruism": -15,
+          "cooperation": -10,
+          "intuition": 3,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "待つ。同格との戦いにしか意味はない。",
+          "en": "Wait. Only fights with equals have meaning."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 0,
+          "intuition": -5,
+          "mastery": 10
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "初心者にコーチングしながら遊ぶ。",
+          "en": "Coach beginners while you play."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 15,
+          "cooperation": 12,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "別のゲームに移る。新しい挑戦を探す。",
+          "en": "Move to a different game. Seek a new challenge."
+        },
+        "scores": {
+          "aggression": 0,
+          "altruism": 0,
+          "cooperation": -3,
+          "intuition": 5,
+          "mastery": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t017",
+    "tier": "top",
+    "category": "meta",
+    "scenario": {
+      "ja": "友人が言った。「お前、ゲームしてる時だけ本当の自分だよな。」\n冗談のつもりだったらしい。\nだが刺さった。心当たりがある。\nゲームの外のお前は、誰だ。",
+      "en": "A friend said: \"You're only really yourself when you're gaming.\"\nThey meant it as a joke.\nBut it hit hard. Because you know it's true.\nWho are you outside the game."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "「そうだよ。何が悪い。」",
+          "en": "\"Yeah. So what.\""
+        },
+        "scores": {
+          "aggression": 8,
+          "altruism": -5,
+          "cooperation": -8,
+          "intuition": 5,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "笑い飛ばす。深く考えたくない。",
+          "en": "Laugh it off. Don't want to think too deep."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 0,
+          "cooperation": 3,
+          "intuition": -10,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "考え込む。ゲームの外でも自分でいたいと思う。",
+          "en": "Reflect. You want to be yourself outside the game too."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 5,
+          "cooperation": 3,
+          "intuition": 2,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "「お前もゲームの中の方が良い奴だぞ。」",
+          "en": "\"You're a better person in-game too, you know.\""
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -3,
+          "cooperation": 5,
+          "intuition": 5,
+          "mastery": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t018",
+    "tier": "top",
+    "category": "meta",
+    "scenario": {
+      "ja": "プロゲーマーへの道がある。だが年収は今の仕事の半分。\n3年で結果を出せなければ引退。\nゲームは好きだ。だが「好きを仕事にする」恐怖もある。\n好きなものが義務になった時、お前はまだ楽しめるか。",
+      "en": "A path to going pro exists. But the salary is half your current job.\nThree years to prove yourself or retire.\nYou love gaming. But turning passion into obligation is terrifying.\nWhen what you love becomes duty, can you still enjoy it."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "飛び込む。後悔だけはしたくない。",
+          "en": "Go for it. Anything but regret."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": 0,
+          "cooperation": -5,
+          "intuition": 10,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "断る。趣味のままが一番幸せだ。",
+          "en": "Decline. It's happiest as a hobby."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 3,
+          "cooperation": 3,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "副業として始める。リスクを抑えて試す。",
+          "en": "Start it as a side gig. Test the waters safely."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -10,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "プロでなくてもいい。コミュニティ運営やコーチで関わる。",
+          "en": "Don't need to go pro. Engage through coaching or community."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 10,
+          "cooperation": 12,
+          "intuition": 3,
+          "mastery": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "t019",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "defense",
+    "scenario": {
+      "ja": "大会で完敗した。手も足も出なかった。\n帰り道、頭の中でリプレイが止まらない。\nあのシーン、あの判断、あの一瞬。\nお前の心は何を求めている。",
+      "en": "Total defeat at the tournament. You didn't stand a chance.\nOn the way home, the replay won't stop in your head.\nThat moment, that decision, that split second.\nWhat does your mind reach for."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "「今日は調子が悪かっただけ。本来の実力じゃない。」",
+          "en": "\"Just an off day. That wasn't my real level.\""
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -3,
+          "cooperation": -5,
+          "intuition": 5,
+          "mastery": -12
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "「相手が強すぎた。環境が悪かった。」",
+          "en": "\"They were too strong. The meta wasn't in my favor.\""
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": 3,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "リプレイを見返す。弱さを直視する。",
+          "en": "Rewatch the replay. Face the weakness head-on."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -12,
+          "mastery": 10
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "別のゲームを起動する。考えたくない。",
+          "en": "Boot up a different game. Don't want to think about it."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -5,
+          "cooperation": -3,
+          "intuition": 5,
+          "mastery": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "t020",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "defense",
+    "scenario": {
+      "ja": "チームメイトがお前のミスを全体チャットで晒した。\nスクリーンショット付き。コメント欄が笑っている。\n腹の底から何かが込み上げてくる。\nお前の指は何を打つ。",
+      "en": "Your teammate posted your blunder in public chat.\nWith screenshots. The comments are laughing.\nSomething rises from the pit of your stomach.\nWhat do your fingers type."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "反撃する。相手のミスも晒す。",
+          "en": "Hit back. Expose their mistakes too."
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": -12,
+          "cooperation": -12,
+          "intuition": 2,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "自虐で笑いに変える。「俺も見て笑ったわ。」",
+          "en": "Turn it into self-deprecating humor. \"Even I laughed at that.\""
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 5,
+          "cooperation": 8,
+          "intuition": 5,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "無視する。反応したら負け。",
+          "en": "Ignore it. Reacting means losing."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": -3,
+          "cooperation": -5,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "チームを脱退する。居場所はここじゃない。",
+          "en": "Leave the team. This isn't where you belong."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -5,
+          "cooperation": -15,
+          "intuition": 5,
+          "mastery": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t021",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "defense",
+    "scenario": {
+      "ja": "連敗が止まらない。5連敗。10連敗。\nランクがどんどん落ちていく。\n「下手になったのか？」自問が始まる。\nお前はコントローラーをどうする。",
+      "en": "The losing streak won't end. Five. Ten.\nYour rank keeps dropping.\n\"Am I getting worse?\" The self-doubt begins.\nWhat do you do with the controller."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "もう1戦。取り返すまで止められない。",
+          "en": "One more game. Can't stop until you win it back."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": -3,
+          "cooperation": -5,
+          "intuition": 5,
+          "mastery": -14
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "電源を切る。冷静になってから考える。",
+          "en": "Power off. Cool down, then reflect."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 3,
+          "cooperation": 0,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "カジュアルモードに切り替える。楽しむことを思い出す。",
+          "en": "Switch to casual. Remember what fun feels like."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 5,
+          "cooperation": 3,
+          "intuition": 2,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "SNSに愚痴を書く。共感がほしい。",
+          "en": "Vent on social media. Need someone to relate."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -3,
+          "cooperation": 8,
+          "intuition": 2,
+          "mastery": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "t022",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "defense",
+    "scenario": {
+      "ja": "約束の時間にチームメイトが来ない。\n30分待った。連絡なし。\n1時間後、「ごめん忘れてた」とだけ。\nお前の内側で何かが冷えていく。",
+      "en": "Your teammate doesn't show at the agreed time.\n30 minutes of waiting. No message.\nAn hour later: \"Sorry, forgot.\"\nSomething goes cold inside you."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "怒りをぶつける。「時間を返せ。」",
+          "en": "Let the anger out. \"Give me my time back.\""
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": -8,
+          "cooperation": -10,
+          "intuition": 2,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "「了解」とだけ返す。もう誘わない。",
+          "en": "Reply \"Got it\" and never invite them again."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -10,
+          "cooperation": -12,
+          "intuition": -3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "「大丈夫、次は連絡してね」と許す。",
+          "en": "\"No worries, just let me know next time.\""
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 10,
+          "cooperation": 10,
+          "intuition": -5,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "何も言わない。傷ついたことを悟られたくない。",
+          "en": "Say nothing. Don't want them to know it hurt."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -3,
+          "cooperation": -5,
+          "intuition": 3,
+          "mastery": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "t023",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "attachment",
+    "scenario": {
+      "ja": "MMOで半年間ずっと一緒に遊んでいたフレンドが、突然ログインしなくなった。\n3日、1週間、2週間。\nDMを送ったが既読にならない。\nお前の心はどう動く。",
+      "en": "Your MMO friend you played with daily for six months suddenly stopped logging in.\nThree days. One week. Two weeks.\nYour DM sits unread.\nWhat does your heart do."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "毎日メッセージを送り続ける。戻ってきてほしい。",
+          "en": "Keep messaging every day. You need them to come back."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 12,
+          "intuition": 2,
+          "mastery": -14
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "諦める。ネットの付き合いなんてそんなもの。",
+          "en": "Accept it. Online friendships are like that."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -10,
+          "cooperation": -12,
+          "intuition": -5,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "1通だけ送って待つ。「元気ならいいけど。」",
+          "en": "Send one message and wait. \"Hope you're okay.\""
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 10,
+          "cooperation": 5,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "新しいフレンドを探す。依存してた自分に気づく。",
+          "en": "Find new friends. Realize you were too dependent."
+        },
+        "scores": {
+          "aggression": 0,
+          "altruism": -3,
+          "cooperation": -5,
+          "intuition": 5,
+          "mastery": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "t024",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "attachment",
+    "scenario": {
+      "ja": "新しいギルドに入った。みんな温かい。\nだが前のギルドで裏切られた記憶がフラッシュバックする。\n「また同じことになるんじゃないか。」\n心の壁をどうする。",
+      "en": "You joined a new guild. Everyone's welcoming.\nBut memories of being backstabbed in your last guild keep flashing back.\n\"What if it happens again.\"\nWhat do you do with the walls around your heart."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "壁を保つ。深入りしなければ傷つかない。",
+          "en": "Keep the walls up. Can't get hurt if you don't get close."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -8,
+          "cooperation": -12,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "思い切って信じる。過去は過去。",
+          "en": "Take the leap. The past is the past."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 8,
+          "cooperation": 15,
+          "intuition": 5,
+          "mastery": -8
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "様子を見る。信頼は行動で判断する。",
+          "en": "Observe first. Trust based on actions, not words."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 0,
+          "cooperation": 3,
+          "intuition": -12,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "ソロでいい。もう群れる必要はない。",
+          "en": "Solo is fine. No need for groups anymore."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": -5,
+          "cooperation": -15,
+          "intuition": 2,
+          "mastery": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "t025",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "attachment",
+    "scenario": {
+      "ja": "Co-opゲーム。相方が「お前がいないと楽しくない」と言ってきた。\n嬉しい。でも重い。\nログインするたびに誘われる。断ると空気が変わる。\nこの関係をどうしたい。",
+      "en": "Co-op game. Your partner says: \"It's not fun without you.\"\nFlattering. But heavy.\nEvery login, they invite you. Decline and the mood shifts.\nWhat do you want from this relationship."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "正直に伝える。「毎回は無理。」",
+          "en": "Be honest. \"I can't every time.\""
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 5,
+          "cooperation": -3,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "合わせる。相手を失いたくない。",
+          "en": "Go along with it. Don't want to lose them."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 8,
+          "cooperation": 10,
+          "intuition": -3,
+          "mastery": -14
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "距離を置く。フェードアウトする。",
+          "en": "Create distance. Slowly fade out."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -10,
+          "cooperation": -12,
+          "intuition": 2,
+          "mastery": 3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "他のフレンドも巻き込む。2人だけの関係を薄める。",
+          "en": "Bring in other friends. Dilute the one-on-one dynamic."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 3,
+          "cooperation": 8,
+          "intuition": 5,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t026",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "attachment",
+    "scenario": {
+      "ja": "ギルドマスターが突然脱退した。お前を後任に指名して。\n理由は語らず。「頼んだ」それだけ。\n残されたメンバーは困惑している。\nお前は支えになりたいのか、逃げ出したいのか。",
+      "en": "The guild master quit without warning. Named you as successor.\nNo explanation. Just: \"I'm counting on you.\"\nMembers are confused and shaken.\nDo you want to be their pillar, or do you want to run."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "引き受ける。みんなを守る。",
+          "en": "Accept. Protect everyone."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 12,
+          "cooperation": 15,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "断る。そんな責任は背負えない。",
+          "en": "Refuse. Can't carry that weight."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -8,
+          "cooperation": -10,
+          "intuition": 2,
+          "mastery": -5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "一時的に引き受けて、適任者を探す。",
+          "en": "Take it temporarily while you find someone better suited."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 5,
+          "cooperation": 8,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "ギルドを解散する。もう意味がない。",
+          "en": "Dissolve the guild. It's over."
+        },
+        "scores": {
+          "aggression": 8,
+          "altruism": -12,
+          "cooperation": -15,
+          "intuition": 3,
+          "mastery": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "t027",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "dark",
+    "scenario": {
+      "ja": "MMO。レアアイテムの取引。相手が価値を知らないようだ。\n本来の10分の1の値段で売ろうとしている。\n教えてやれば感謝される。黙って買えば大儲け。\n誰も見ていない。",
+      "en": "MMO. Rare item trade. The seller clearly doesn't know its value.\nThey're listing it at one-tenth the real price.\nTell them and earn gratitude. Buy silently and profit big.\nNobody's watching."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "即買い。ビジネスに感情はいらない。",
+          "en": "Buy immediately. No room for feelings in business."
+        },
+        "scores": {
+          "aggression": 10,
+          "altruism": -15,
+          "cooperation": -10,
+          "intuition": 2,
+          "mastery": 3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "教えてやる。正当な取引がしたい。",
+          "en": "Tell them. You want a fair deal."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 15,
+          "cooperation": 10,
+          "intuition": -3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "少し上乗せして買う。完全な搾取は避ける。",
+          "en": "Buy at a slightly higher price. Avoid total exploitation."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": -3,
+          "cooperation": 0,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "スルーする。面倒事には関わらない。",
+          "en": "Walk away. Not your problem."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": -5,
+          "cooperation": -5,
+          "intuition": -5,
+          "mastery": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "t028",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "dark",
+    "scenario": {
+      "ja": "対戦ゲーム。相手がラグで固まった。\n動けない敵。無防備。倒せば勝ち確定。\n待ってやれば「いい奴」だと思われる。\n勝利と名誉、どっちが欲しい。",
+      "en": "Competitive match. Your opponent froze from lag.\nDefenseless. Kill them and you win.\nWait and you'll be praised as honorable.\nVictory or reputation. Which do you want."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "倒す。勝利がすべて。",
+          "en": "Kill them. Victory is everything."
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": -12,
+          "cooperation": -8,
+          "intuition": 3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "待つ。フェアじゃない勝ちに価値はない。",
+          "en": "Wait. An unfair win has no value."
+        },
+        "scores": {
+          "aggression": -9,
+          "altruism": 12,
+          "cooperation": 8,
+          "intuition": -5,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "チャットで「待ってる」と伝えてから判断する。",
+          "en": "Type \"I'll wait\" in chat, then decide based on their response."
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 8,
+          "cooperation": 10,
+          "intuition": 3,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "状況による。大会なら倒す。カジュアルなら待つ。",
+          "en": "Depends. Tournament, kill. Casual, wait."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 0,
+          "cooperation": 0,
+          "intuition": -10,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t029",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "dark",
+    "scenario": {
+      "ja": "サバイバルゲーム。3人パーティ。宝箱にレア武器が1つ。\nお前が見つけた。だがパーティで一番弱い仲間に渡した方がチーム的には最適。\n強い方が持てば個人の生存率は上がる。\n仲間はまだ気づいていない。",
+      "en": "Survival game. Three-person party. One rare weapon in a chest.\nYou found it. But the weakest member needs it most for team optimization.\nKeep it and your personal survival goes up.\nThey haven't noticed yet."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "黙って装備する。生き残ることが最優先。",
+          "en": "Equip it silently. Survival comes first."
+        },
+        "scores": {
+          "aggression": 8,
+          "altruism": -15,
+          "cooperation": -12,
+          "intuition": 3,
+          "mastery": 3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "弱い仲間に渡す。チーム全体が強くなる方がいい。",
+          "en": "Give it to the weakest. Team strength matters more."
+        },
+        "scores": {
+          "aggression": -7,
+          "altruism": 15,
+          "cooperation": 15,
+          "intuition": -3,
+          "mastery": 5
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "「誰が使う？」と聞く。自分で決めたくない。",
+          "en": "Ask the group. \"Who should take this?\""
+        },
+        "scores": {
+          "aggression": -3,
+          "altruism": 3,
+          "cooperation": 10,
+          "intuition": -5,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "装備して、代わりに自分の武器を渡す。損はしない。",
+          "en": "Equip it and hand down your old weapon. Nobody loses."
+        },
+        "scores": {
+          "aggression": 3,
+          "altruism": 3,
+          "cooperation": 5,
+          "intuition": 5,
+          "mastery": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "t030",
+    "tier": "top",
+    "category": "psych",
+    "psychTag": "dark",
+    "scenario": {
+      "ja": "ギルド戦。敵ギルドのスパイからリーク情報が届いた。\n相手の戦略が丸わかり。使えば圧勝できる。\nだがスパイの正体がバレたら、そいつは追放される。\n「使ってくれ」とスパイは言う。",
+      "en": "Guild war. A spy from the enemy guild leaked their strategy.\nFull battle plan exposed. Use it and you crush them.\nBut if the spy is caught, they're gone for good.\n\"Use it,\" the spy says."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ja": "使う。戦争に綺麗も汚いもない。",
+          "en": "Use it. War has no clean or dirty."
+        },
+        "scores": {
+          "aggression": 12,
+          "altruism": -10,
+          "cooperation": -5,
+          "intuition": 2,
+          "mastery": 3
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ja": "断る。そんな勝ち方はしたくない。",
+          "en": "Refuse. That's not how you want to win."
+        },
+        "scores": {
+          "aggression": -6,
+          "altruism": 10,
+          "cooperation": 5,
+          "intuition": -3,
+          "mastery": 7
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ja": "情報を使うが、スパイの安全を最優先にする。",
+          "en": "Use the intel but prioritize the spy's safety above all."
+        },
+        "scores": {
+          "aggression": 5,
+          "altruism": 5,
+          "cooperation": 3,
+          "intuition": 5,
+          "mastery": -3
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ja": "相手ギルドにスパイの存在をリークする。混乱を楽しむ。",
+          "en": "Leak the spy's existence to the enemy guild. Enjoy the chaos."
+        },
+        "scores": {
+          "aggression": 15,
+          "altruism": -15,
+          "cooperation": -15,
+          "intuition": 5,
+          "mastery": -12
+        }
+      }
+    ]
+  }
+]

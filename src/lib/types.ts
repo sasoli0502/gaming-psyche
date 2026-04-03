@@ -20,7 +20,8 @@ export interface QuestionOption {
 export interface Question {
   id: string;
   tier: "free" | "mid" | "top";
-  category: "tactical" | "social" | "meta";
+  category: "tactical" | "social" | "meta" | "psych";
+  psychTag?: "defense" | "attachment" | "dark";
   scenario: LocaleText;
   options: QuestionOption[];
 }

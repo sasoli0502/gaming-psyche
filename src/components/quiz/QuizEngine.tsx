@@ -134,6 +134,8 @@ export function QuizEngine({ questions, locale, onComplete }: QuizEngineProps) {
       ? t(locale, "quiz.category.tactical")
       : currentQuestion.category === "social"
       ? t(locale, "quiz.category.social")
+      : currentQuestion.category === "psych"
+      ? (locale === "ja" ? "心理分析" : "Psych Analysis")
       : t(locale, "quiz.category.meta");
 
   return (
