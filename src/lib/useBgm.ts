@@ -32,7 +32,12 @@ function fadeOut(audio: HTMLAudioElement, onDone: () => void) {
 
 function fadeIn(audio: HTMLAudioElement, targetVolume: number) {
   audio.volume = 0;
-  audio.play().catch(() => {});
+  const promise = audio.play();
+  if (promise) {
+    promise.catch(() => {
+      // Autoplay blocked — will retry on first user interaction
+    });
+  }
   const step = targetVolume / (FADE_MS / FADE_STEP);
   const timer = setInterval(() => {
     const next = audio.volume + step;
@@ -49,9 +54,33 @@ export function useBgm(screen: string) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const currentTrackRef = useRef<TrackKey | null>(null);
   const mutedRef = useRef(false);
+  const interactionRef = useRef(false);
 
   const trackKey: TrackKey =
     screen === "quiz" ? "quiz" : screen === "result" || screen === "types" ? "result" : "landing";
+
+  // Resume audio on first user interaction (bypasses Autoplay policy)
+  useEffect(() => {
+    const resume = () => {
+      if (interactionRef.current) return;
+      interactionRef.current = true;
+      const audio = audioRef.current;
+      if (audio && audio.paused && !mutedRef.current) {
+        audio.play().catch(() => {});
+      }
+      document.removeEventListener("click", resume);
+      document.removeEventListener("touchstart", resume);
+      document.removeEventListener("keydown", resume);
+    };
+    document.addEventListener("click", resume, { once: false });
+    document.addEventListener("touchstart", resume, { once: false });
+    document.addEventListener("keydown", resume, { once: false });
+    return () => {
+      document.removeEventListener("click", resume);
+      document.removeEventListener("touchstart", resume);
+      document.removeEventListener("keydown", resume);
+    };
+  }, []);
 
   useEffect(() => {
     if (trackKey === currentTrackRef.current) return;
@@ -84,7 +113,6 @@ export function useBgm(screen: string) {
     }
 
     return () => {
-      // Cleanup on unmount
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current.src = "";
