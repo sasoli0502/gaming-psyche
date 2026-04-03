@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[86490,["/gaming-psyche/_next/static/chunks/b9af305db5adc7fb.js"],"default"]
 3:I[70699,["/gaming-psyche/_next/static/chunks/b9af305db5adc7fb.js"],"default"]
-0:{"buildId":"Ite3b7_nNcsgpEyQ-3VbY","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"2FjUS00EnZdWQ1zEdhyXG","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
