@@ -10,6 +10,7 @@ import { TypeList } from "@/components/result/TypeList";
 import { AxisScores, Locale } from "@/lib/types";
 import { normalizeScores, findType } from "@/lib/scoring";
 import { t } from "@/lib/i18n";
+import { useBgm } from "@/lib/useBgm";
 import freeQuestions from "@/data/questions/free.json";
 import typesData from "@/data/types/types.json";
 import type { Question, GamerType } from "@/lib/types";
@@ -28,6 +29,9 @@ export default function Home() {
 
   const questions = freeQuestions as Question[];
   const types = typesData as GamerType[];
+
+  const { toggleMute } = useBgm(appState);
+  const [muted, setMuted] = useState(false);
 
   const handleQuizComplete = (
     scores: AxisScores,
@@ -51,14 +55,23 @@ export default function Home() {
     setLocale((prev) => (prev === "ja" ? "en" : "ja"));
   };
 
-  // Language switch button (always visible)
+  // Language switch + mute buttons (always visible)
   const langSwitch = (
-    <button
-      onClick={toggleLocale}
-      className="fixed top-6 right-6 z-50 px-4 py-2 bg-black/20 backdrop-blur-md border border-white/10 rounded-full text-xs font-sans tracking-widest text-white/70 hover:text-dawn-highlight hover:border-dawn-gold/50 hover:bg-black/40 transition-all duration-300"
-    >
-      {t(locale, "common.langSwitch")}
-    </button>
+    <div className="fixed top-6 right-6 z-50 flex gap-2">
+      <button
+        onClick={() => setMuted(toggleMute())}
+        className="px-3 py-2 bg-black/20 backdrop-blur-md border border-white/10 rounded-full text-xs font-sans text-white/70 hover:text-dawn-highlight hover:border-dawn-gold/50 hover:bg-black/40 transition-all duration-300"
+        aria-label={muted ? "Unmute" : "Mute"}
+      >
+        {muted ? "🔇" : "🔊"}
+      </button>
+      <button
+        onClick={toggleLocale}
+        className="px-4 py-2 bg-black/20 backdrop-blur-md border border-white/10 rounded-full text-xs font-sans tracking-widest text-white/70 hover:text-dawn-highlight hover:border-dawn-gold/50 hover:bg-black/40 transition-all duration-300"
+      >
+        {t(locale, "common.langSwitch")}
+      </button>
+    </div>
   );
 
   return (
