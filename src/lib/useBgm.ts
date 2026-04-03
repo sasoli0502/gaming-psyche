@@ -57,6 +57,9 @@ export function useBgm(screen: string) {
     if (trackKey === currentTrackRef.current) return;
 
     const prev = audioRef.current;
+    const prevTrack = currentTrackRef.current;
+    currentTrackRef.current = trackKey;
+
     const startNext = () => {
       const audio = new Audio(TRACKS[trackKey]);
       audio.loop = true;
@@ -65,17 +68,28 @@ export function useBgm(screen: string) {
         audio.muted = true;
       }
       audioRef.current = audio;
-      currentTrackRef.current = trackKey;
       fadeIn(audio, 0.4);
     };
 
-    if (prev && !prev.paused) {
-      fadeOut(prev, startNext);
+    if (prev && prevTrack !== null) {
+      if (!prev.paused) {
+        fadeOut(prev, startNext);
+      } else {
+        prev.pause();
+        prev.src = "";
+        startNext();
+      }
     } else {
       startNext();
     }
 
-    return () => {};
+    return () => {
+      // Cleanup on unmount
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.src = "";
+      }
+    };
   }, [trackKey]);
 
   const toggleMute = useCallback(() => {
